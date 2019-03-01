@@ -1,0 +1,9 @@
+1.Single Responsibility Principle 简称SRP 设计符合SRP原则吗？
+    #单一职责:应该有且只有一个原因引起类的变更
+    1.1属性和行为要分开
+    1.2BO(Business Object 业务对象) 行为Biz(Business Logic 业务逻辑)
+
+2.单一职责的好处:
+    1.类的复杂性降低，实现什么职责都有清晰明确的定义
+    2.可读性提高
+    3.变更引起的风险降低
