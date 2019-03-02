@@ -5,7 +5,8 @@ plugins {
 group 'com.mic'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.8 //源代码兼容版本
+targetCompatibility = 1.8 //编译后的兼容版本
 
 repositories {
     mavenCentral()
