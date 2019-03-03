@@ -1,5 +1,7 @@
 package com.mic.java8.function;
 
+import com.mic.java8.bean.Person;
+
 import java.util.function.Supplier;
 
 /**

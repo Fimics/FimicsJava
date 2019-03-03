@@ -1,4 +1,4 @@
-package com.mic.java8.function;
+package com.mic.java8.bean;
 
 import java.util.Objects;
 
