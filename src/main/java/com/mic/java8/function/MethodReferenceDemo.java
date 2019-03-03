@@ -45,10 +45,13 @@ public class MethodReferenceDemo {
 
         //3.类名::实例方法名 第一个person调用compareByName()-->p1.compare(p2)
         /*personList.sort(Person::compareByName);
-        System.out.println(personList);*/
-
-        //4.jdk 自己的排序
+        System.out.println(personList);
         Collections.sort(list,String::compareToIgnoreCase);
         System.out.println(list);
+        */
+
+        //4.ClassName::new
+        
+
     }
 }
