@@ -1,10 +1,8 @@
 package com.mic.java8.function;
 
-import com.mic.java8.bean.BeanHelper;
 import com.mic.java8.bean.Person;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class MethodReferenceDemo {
@@ -12,7 +10,6 @@ public class MethodReferenceDemo {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("java","python","android","ios","javaScript","kotlin",
                 "c","c++","lisp","ruby","swfit","groovy");
-
 
         //list.forEach(e-> System.out.println(e));
 
@@ -51,7 +48,5 @@ public class MethodReferenceDemo {
         */
 
         //4.ClassName::new
-        
-
     }
 }
