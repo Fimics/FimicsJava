@@ -40,6 +40,18 @@ public class Person {
 //                Objects.equals(getUsername(), person.getUsername());
 //    }
 
+    public static String getId(Person person){
+        return String.valueOf(person.hashCode());
+    }
+
+    public static int compareByAge(Person p1,Person p2){
+        return p1.getAge()-p2.getAge();
+    }
+
+    public int compareByName(Person person){
+        return this.getUsername().compareTo(person.getUsername());
+    }
+
 
     @Override
     public boolean equals(Object o) {
