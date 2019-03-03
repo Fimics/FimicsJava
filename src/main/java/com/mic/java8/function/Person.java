@@ -4,8 +4,11 @@ import java.util.Objects;
 
 public class Person {
 
-    private String username;
-    private int age;
+    private String username="steven";
+    private int age=20;
+
+    public Person() {
+    }
 
     public Person(String username, int age) {
         this.username = username;
