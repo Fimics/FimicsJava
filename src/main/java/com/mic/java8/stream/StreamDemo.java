@@ -3,6 +3,7 @@ package com.mic.java8.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamDemo {
@@ -26,8 +27,11 @@ public class StreamDemo {
         String [] strings = stream.toArray(length->new String[length]);
         Arrays.asList(strings).forEach(item-> System.out.println(item));*/
 
-        String [] strings = stream.toArray(String[]::new);
-        Arrays.asList(strings).forEach(System.out::println);
+//        String [] strings = stream.toArray(String[]::new);
+//        Arrays.asList(strings).forEach(System.out::println);
+
+        List<String> list =stream.collect(Collectors.toList());
+        list.forEach(System.out::println);
 
     }
 
