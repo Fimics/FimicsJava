@@ -3,6 +3,7 @@ package com.mic.java8.stream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -31,6 +32,12 @@ public class StreamMapDemo {
 
         Stream stream1 = Stream.generate(UUID.randomUUID()::toString);
         stream1.findFirst().ifPresent(System.out::println);
+
+
+        List<Integer> list1 =Arrays.asList(1,2,3,4,5);
+        //step
+        Stream stream2 =Stream.iterate(1, integer -> integer*2).limit(30);
+        stream2.forEach(System.out::println);
 
 
     }
