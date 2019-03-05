@@ -36,8 +36,14 @@ public class StreamMapDemo {
 
         List<Integer> list1 =Arrays.asList(1,2,3,4,5);
         //step
-        Stream stream2 =Stream.iterate(1, integer -> integer*2).limit(30);
-        stream2.forEach(System.out::println);
+        Stream stream2 =Stream.iterate(1, item -> item+2).limit(10);
+        //stream2.forEach(System.out::println);
+
+        System.out.println(stream2.filter(item -> (Integer)item>2)
+                                  .mapToInt(item->(Integer)item*2)
+                                  .skip(2)
+                                  .limit(2)
+                                  .sum());
 
 
     }
