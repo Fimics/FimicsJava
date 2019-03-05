@@ -45,12 +45,12 @@ public class StreamMapDemo {
 //                                  .limit(2)
 //                                  .sum());
 
-
-        System.out.println(stream2.filter(item -> (Integer)item>2)
+        stream2.filter(item -> (Integer)item>2)
                 .mapToInt(item->(Integer)item*2)
                 .skip(2)
                 .limit(2)
-                .min().getAsInt());
+                .min()
+                .ifPresent(System.out::println);
 
 
     }
