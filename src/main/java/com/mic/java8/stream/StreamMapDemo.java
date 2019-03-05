@@ -1,6 +1,7 @@
 package com.mic.java8.stream;
 
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.UUID;
 import java.util.function.UnaryOperator;
@@ -45,12 +46,22 @@ public class StreamMapDemo {
 //                                  .limit(2)
 //                                  .sum());
 
-        stream2.filter(item -> (Integer)item>2)
+        /*stream2.filter(item -> (Integer)item>2)
                 .mapToInt(item->(Integer)item*2)
                 .skip(2)
                 .limit(2)
                 .min()
-                .ifPresent(System.out::println);
+                .ifPresent(System.out::println);*/
+
+
+        IntSummaryStatistics statistics=stream2.filter(item -> (Integer)item>2)
+                .mapToInt(item->(Integer)item*2)
+                .skip(2)
+                .limit(2)
+                .summaryStatistics();
+
+        System.out.println(statistics.getAverage());
+        System.out.println(statistics.getCount());
 
 
     }
