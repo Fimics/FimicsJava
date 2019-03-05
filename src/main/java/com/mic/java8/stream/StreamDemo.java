@@ -1,8 +1,7 @@
 package com.mic.java8.stream;
 
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -30,8 +29,12 @@ public class StreamDemo {
 //        String [] strings = stream.toArray(String[]::new);
 //        Arrays.asList(strings).forEach(System.out::println);
 
-        List<String> list =stream.collect(Collectors.toList());
-        list.forEach(System.out::println);
+        //List<String> list =stream.collect(Collectors.toList());
+        //List<String> list = stream.collect(()->new ArrayList(),(theList,item)->theList.add(item),(list1,list2)->list1.add(list2));
+        //List<String> list = stream.collect(LinkedList::new,LinkedList::add,LinkedList::addAll);
+//        List<String> list = stream.collect(Collectors.toCollection(ArrayList::new));
+//        Set<String> set = stream.collect(Collectors.toCollection(TreeSet::new));
+//        list.forEach(System.out::println);
 
     }
 
