@@ -2,6 +2,7 @@ package com.mic.java8.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -26,6 +27,10 @@ public class StreamMapDemo {
                 .reduce(Integer::sum)
                 .get());
 
+
+
+        Stream stream1 = Stream.generate(UUID.randomUUID()::toString);
+        stream1.findFirst().ifPresent(System.out::println);
 
 
     }
