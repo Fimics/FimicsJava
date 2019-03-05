@@ -39,11 +39,18 @@ public class StreamMapDemo {
         Stream stream2 =Stream.iterate(1, item -> item+2).limit(10);
         //stream2.forEach(System.out::println);
 
+//        System.out.println(stream2.filter(item -> (Integer)item>2)
+//                                  .mapToInt(item->(Integer)item*2)
+//                                  .skip(2)
+//                                  .limit(2)
+//                                  .sum());
+
+
         System.out.println(stream2.filter(item -> (Integer)item>2)
-                                  .mapToInt(item->(Integer)item*2)
-                                  .skip(2)
-                                  .limit(2)
-                                  .sum());
+                .mapToInt(item->(Integer)item*2)
+                .skip(2)
+                .limit(2)
+                .min().getAsInt());
 
 
     }
