@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamMapDemo {
@@ -62,6 +63,9 @@ public class StreamMapDemo {
 
         System.out.println(statistics.getAverage());
         System.out.println(statistics.getCount());
+
+
+        IntStream.iterate(0,i->(i+1)%2).limit(6).distinct().forEach(System.out::println);
 
 
     }
