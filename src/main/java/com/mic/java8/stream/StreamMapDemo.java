@@ -13,7 +13,7 @@ public class StreamMapDemo {
 
     public static void main(String[] args) {
 
-       List<String> list = Arrays.asList("hello","world","hello world");
+       List<String> list = Arrays.asList("hello android","world","hello world","java c","hello","python","world");
 
        /*
         list.stream()
@@ -74,11 +74,13 @@ public class StreamMapDemo {
                     .findFirst()
                     .ifPresent(System.out::println);*/
 
-       list.stream().mapToInt(item->{
+       /*list.stream().mapToInt(item->{
            int length = item.length();
            System.out.println(item);
            return length;
        }).findFirst().ifPresent(System.out::println);
+*/
+
 
 
     }
