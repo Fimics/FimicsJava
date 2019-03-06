@@ -1,7 +1,5 @@
 package com.mic.java8.stream;
 
-import java.awt.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
