@@ -1,4 +1,4 @@
-package com.mic.concurrency;
+package com.mic.thread;
 
 import java.util.stream.IntStream;
 
