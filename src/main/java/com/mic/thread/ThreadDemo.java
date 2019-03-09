@@ -1,4 +1,4 @@
-package mic.concurrency;
+package com.mic.thread;
 
 public class ThreadDemo {
 
