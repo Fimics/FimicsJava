@@ -39,6 +39,13 @@ public class SynchronizedDemo {
                         e.printStackTrace();
                     }
 
+                    /**
+                     * index ++
+                     * 1.get Filed index
+                     * 2.index =index+1
+                     * 3.put filed index = index
+                     */
+
                     System.out.println(Thread.currentThread().getName() + "-------this thread index : " + (index++));
                 }
             }
