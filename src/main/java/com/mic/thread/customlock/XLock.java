@@ -30,6 +30,19 @@ public class XLock implements Lock {
 
     @Override
     public synchronized void lock(long mills) throws InterruptedException, TimeOutException {
+         if(mills<=0) lock();
+
+         long hasRemaining = mills;
+         long endTime = System.currentTimeMillis()+mills;
+
+         while (isLock){
+             blockedThreadCollection.add(Thread.currentThread());
+             this.wait();
+         }
+
+         if(System.currentTimeMillis()>endTime){
+             unlock();
+         }
 
     }
 
