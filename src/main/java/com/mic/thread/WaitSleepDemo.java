@@ -19,7 +19,7 @@ public class WaitDemo {
 
     private void start() {
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             Thread p = new Thread(() -> {
                 while (true) {
                     produce();
@@ -47,7 +47,7 @@ public class WaitDemo {
                 lock.notify();
             } else {
                 try {
-                    lock.wait(1000);
+                    lock.wait(1000); //时间到了自动唤醒
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -67,7 +67,7 @@ public class WaitDemo {
                 try {
                     // if has a produce just notfiy other consume it
                     lock.wait(1000);
-                    Thread.sleep(1000);
+                    //Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
