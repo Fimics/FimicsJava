@@ -3,8 +3,13 @@ package com.mic.thread;
 
 /**
  * 生产者消费者
+ * wait()与sleep()
+ * 1.wait()是object方法sleep()是线程的方法
+ * 2.wait()不持有对象锁，sleep()持有对象锁
+ * 3.使用wait(),必须依赖 monitor
+ * 4.wait()不会自动唤醒。。wait(1000)时间到了会自动唤醒
  */
-public class WaitDemo {
+public class WaitSleepDemo {
 
     private int index = 0;
     private static final Object lock = new Object();
@@ -12,7 +17,7 @@ public class WaitDemo {
 
     public static void main(String[] args) {
 
-        WaitDemo demo = new WaitDemo();
+        WaitSleepDemo demo = new WaitSleepDemo();
         demo.start();
     }
 
