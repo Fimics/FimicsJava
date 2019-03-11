@@ -20,7 +20,6 @@ public class EnumSingleton {
         }
     }
 
-
     public static EnumSingleton getInstance(){
         return  Holder.INSTANCE.getInstance();
     }
