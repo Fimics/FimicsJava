@@ -1,5 +1,8 @@
 package com.mic.design.oberver.thread;
 
+/**
+ * Observer to monitor the Thread lifecycle
+ */
 @SuppressWarnings("unused")
 public abstract class ObservableRunnable implements Runnable {
 
