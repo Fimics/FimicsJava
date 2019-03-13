@@ -1,4 +1,4 @@
-package com.mic.pattern.obersver;
+package com.mic.design.singleton;
 
 @SuppressWarnings("unused")
 public class EnumSingleton {
