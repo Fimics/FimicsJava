@@ -1,4 +1,4 @@
-package com.mic.thread.pattern;
+package com.mic.pattern.obersver;
 
 @SuppressWarnings("unused")
 public class EnumSingleton {
