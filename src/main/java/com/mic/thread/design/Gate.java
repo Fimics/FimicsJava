@@ -4,6 +4,7 @@ package com.mic.thread.design;
  * gate-->叫共享资源，临界值
  * Single Threaded Execution design pattern
  * 意思为: 有一个一次只能通过一个人，每个人通过这个门时，会记录，姓名，来自哪里，第几个通过的
+ * 这个例子几乎都是串行化的，怎么用读写锁分离出来？
  */
 public class Gate {
     private int counter =0;
