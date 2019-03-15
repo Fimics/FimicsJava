@@ -1,4 +1,4 @@
-package com.mic.thread.design;
+package com.mic.thread.design.singlethread;
 
 import java.util.Arrays;
 import java.util.List;

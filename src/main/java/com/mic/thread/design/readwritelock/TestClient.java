@@ -1,4 +1,4 @@
-package com.mic.thread.readwritelock;
+package com.mic.thread.design.readwritelock;
 
 import java.util.Arrays;
 import java.util.List;

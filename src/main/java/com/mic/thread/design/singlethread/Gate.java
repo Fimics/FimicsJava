@@ -1,4 +1,4 @@
-package com.mic.thread.design;
+package com.mic.thread.design.singlethread;
 
 /**
  * gate-->叫共享资源，临界值

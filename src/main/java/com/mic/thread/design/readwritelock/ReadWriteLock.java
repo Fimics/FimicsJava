@@ -1,4 +1,4 @@
-package com.mic.thread.readwritelock;
+package com.mic.thread.design.readwritelock;
 
 /**
  * 1. BooleanLock 可以中断

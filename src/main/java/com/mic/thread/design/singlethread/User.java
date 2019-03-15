@@ -1,4 +1,4 @@
-package com.mic.thread.design;
+package com.mic.thread.design.singlethread;
 
 public class User extends Thread{
 
