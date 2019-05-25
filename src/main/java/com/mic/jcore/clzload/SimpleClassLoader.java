@@ -2,26 +2,29 @@ package com.mic.jcore.clzload;
 
 import java.io.*;
 
+/**
+ * 打破双亲委托机制
+ */
 @SuppressWarnings("unused")
-public class CustomClassLoader extends ClassLoader {
+public class SimpleClassLoader extends ClassLoader {
 
     private static final String DEFAULT_DIR = "/Users/lipengju/code/java/FimicsJava/clazz/";
     private String dir = DEFAULT_DIR;
     private String name;
-    protected CustomClassLoader parent;
+    protected SimpleClassLoader parent;
 
-    public CustomClassLoader() {
+    public SimpleClassLoader() {
         super();
     }
 
-    public CustomClassLoader(String name) {
+    public SimpleClassLoader(String name) {
         super();
         this.name = name;
     }
 
-    public CustomClassLoader(String name, ClassLoader parent) {
+    public SimpleClassLoader(String name, ClassLoader parent) {
         super(parent);
-        this.parent = (CustomClassLoader) parent;
+        this.parent = (SimpleClassLoader) parent;
         this.name = name;
     }
 

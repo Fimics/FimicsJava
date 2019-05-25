@@ -1,4 +1,4 @@
-package com.mic.clzload;
+package com.mic.jcore.clzload;
 
 /**
  * 类的加载过程
@@ -16,5 +16,3 @@ public class LoaderClass {
     }
 }
 
-
-class MyObject{}

@@ -3,13 +3,11 @@ package com.mic.jcore.clzload;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class CustomLoaderClient {
-
-    private static final String DIR="/Users/lipengju/code/java/FimicsJava/clazz/";
+public class CustomLoaderTest {
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, InvocationTargetException {
 
-        CustomClassLoader loader = new CustomClassLoader(DIR,"loader");
+        CustomClassLoader loader = new CustomClassLoader("loader");
         Class clazz =loader.findClass("com.mic.jcore.clzload.MyObject");
         System.out.println(clazz);
         System.out.println(clazz.getClassLoader());
@@ -22,6 +20,5 @@ public class CustomLoaderClient {
             String result = (String) method.invoke(obj,new Object[]{});
             System.out.println(result);
         }
-
     }
 }

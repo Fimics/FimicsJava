@@ -1,4 +1,4 @@
-package com.mic.clzload;
+package com.mic.jcore.clzload;
 
 /**
  * test class init

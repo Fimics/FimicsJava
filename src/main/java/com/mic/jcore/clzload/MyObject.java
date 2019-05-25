@@ -1,4 +1,4 @@
-package clazz;
+package com.mic.jcore.clzload;
 
 public class MyObject {
 
