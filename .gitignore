@@ -21,3 +21,4 @@ out/*
 *.zip
 *.tar.gz
 *.rar
+build/
