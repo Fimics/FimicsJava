@@ -36,8 +36,11 @@ fun main(){
 
 //每个类最多只能有一个 companion object
 class MyTest{
+    //companion object obj 编译后obj是MyTest的一个内部类
     companion object obj{
         var a:Int =100;
+
+        //加了这个注解后method会成为MyTest类的一个静态方法，而不是obj的静态方法
         @JvmStatic
         fun method(){
             println("method invoked!")
