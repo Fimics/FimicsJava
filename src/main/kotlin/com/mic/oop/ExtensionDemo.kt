@@ -11,6 +11,11 @@ class ExtensionTest {
 
 fun ExtensionTest.multiply(a: Int, b: Int) = a * b
 
+class MyExtensionProperty
+
+val MyExtensionProperty.name: String
+    get() = "hello"
+
 fun main(args: Array<String>) {
     var extensionTest = ExtensionTest();
 
@@ -26,6 +31,12 @@ fun main(args: Array<String>) {
 
     CC().foo(1)
 
+    var myExtensionProperty = MyExtensionProperty()
+    println(myExtensionProperty.name)
+
+    println("companion extension")
+    CompanionObjectExtension.method()
+
 }
 
 // 扩展函数的解析是静态的
@@ -35,6 +46,14 @@ fun main(args: Array<String>) {
     3. 调用是由对象声明类型所决定的，而不是由对象的实际类型决定
  */
 
+class CompanionObjectExtension{
+    companion object MyObject{
+    }
+}
+
+fun  CompanionObjectExtension.MyObject.method(){
+    println("CompanionObjectExtension.MyObject.method")
+}
 
 open class AA
 

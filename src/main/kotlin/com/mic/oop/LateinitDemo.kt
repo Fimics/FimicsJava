@@ -10,7 +10,7 @@ package com.mic.oop
     backing property，支撑属性
  */
 
-class Person(address:String,name: String){
+class LPerson(address:String,name: String){
 
     //属性初始化
 //    val age:Int = 20
@@ -60,7 +60,7 @@ class TheClass {
 
 
 fun  main(){
-    var person = Person("shanghai", "zhangsan")
+    var person = LPerson("shanghai", "zhangsan")
 
     println(person.age)
 
