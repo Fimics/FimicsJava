@@ -35,7 +35,7 @@ public class Person {
 //    public boolean equals(Object o) {
 //        if (this == o) return true;
 //        if (o == null || getClass() != o.getClass()) return false;
-//        Person person = (Person) o;
+//        kotlin.test.Person person = (kotlin.test.Person) o;
 //        return getAge() == person.getAge() &&
 //                Objects.equals(getUsername(), person.getUsername());
 //    }
@@ -69,7 +69,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "kotlin.test.Person{" +
                 "username='" + username + '\'' +
                 ", age=" + age +
                 '}';

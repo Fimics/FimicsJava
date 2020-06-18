@@ -37,7 +37,7 @@ public class AtomicIntegerFieldUpdaterTest {
 
         @Override
         public String toString() {
-            return "Person{" +
+            return "kotlin.test.Person{" +
                     "age=" + age +
                     ", name='" + name + '\'' +
                     '}';
