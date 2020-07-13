@@ -1,4 +1,4 @@
-package 二叉树;
+package leetcode.binarytree;
 
 public class TreeNode {
 	int val;

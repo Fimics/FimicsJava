@@ -1,15 +1,20 @@
-package 二叉树;
+package leetcode.binarytree;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
  * https://leetcode-cn.com/problems/invert-binary-tree/
- * @author MJ Lee
+ * 反转二叉树，所有的左右节点互换
  *
  */
-public class _226_翻转二叉树 {
-	
+public class BinaryTreeReverse {
+
+	/**
+	 * 前序遍历
+	 * @param root
+	 * @return
+	 */
 //   public TreeNode invertTree(TreeNode root) {
 //	   if (root == null) return root;
 //	   
@@ -22,7 +27,12 @@ public class _226_翻转二叉树 {
 //       
 //       return root;
 //   }
-	
+
+	/**
+	 * 后序遍历
+	 * @param root
+	 * @return
+	 */
 //	public TreeNode invertTree(TreeNode root) {
 //	   if (root == null) return root;
 //	   
@@ -35,7 +45,12 @@ public class _226_翻转二叉树 {
 //       
 //       return root;
 //    }
-	
+
+	/**
+	 * 中序遍历
+	 * @param root
+	 * @return
+	 */
 //	public TreeNode invertTree(TreeNode root) {
 //	   if (root == null) return root;
 //	   
@@ -49,6 +64,12 @@ public class _226_翻转二叉树 {
 //       
 //       return root;
 //    }
+
+	/**
+	 * 层序遍历
+	 * @param root
+	 * @return
+	 */
 	public TreeNode invertTree(TreeNode root) {
 		if (root == null) return root;
 		

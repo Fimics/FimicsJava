@@ -1,13 +1,11 @@
-package com.mj;
+package data.structure.bst;
+
+import data.structure.bst.printer.BinaryTrees;
+import data.structure.bst.tree.BST;
 
 import java.util.Comparator;
 
-import com.mj.file.Files;
-import com.mj.printer.BinaryTreeInfo;
-import com.mj.printer.BinaryTrees;
-import com.mj.tree.BST;
-import com.mj.tree.BinaryTree;
-import com.mj.tree.BinaryTree.Visitor;
+
 
 @SuppressWarnings("unused")
 public class Main {

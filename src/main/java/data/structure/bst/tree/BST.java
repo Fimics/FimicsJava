@@ -1,4 +1,4 @@
-package com.mj.tree;
+package data.structure.bst.tree;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package com.mj.file;
+package data.structure.avl.file;
 
 import java.io.BufferedWriter;
 import java.io.File;

@@ -1,15 +1,13 @@
-package com.mj;
+package data.structure.avl;
+
+import data.structure.avl.printer.BinaryTrees;
+import data.structure.avl.tree.AVLTree;
+import data.structure.avl.tree.BST;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mj.file.Files;
-import com.mj.printer.BinaryTreeInfo;
-import com.mj.printer.BinaryTrees;
-import com.mj.tree.AVLTree;
-import com.mj.tree.BST;
-import com.mj.tree.BinaryTree;
-import com.mj.tree.BinaryTree.Visitor;
+
 
 @SuppressWarnings("unused")
 public class Main {
