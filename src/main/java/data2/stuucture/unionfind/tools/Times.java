@@ -1,4 +1,4 @@
-package data2.stuucture.tools;
+package data2.stuucture.unionfind.tools;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

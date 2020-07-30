@@ -1,4 +1,4 @@
-package data2.stuucture.tools;
+package data2.stuucture.sort.tools;
 
 public class Asserts {
 	public static void test(boolean value) {

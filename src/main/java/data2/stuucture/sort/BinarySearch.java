@@ -1,4 +1,4 @@
-package data2.stuucture;
+package data2.stuucture.sort;
 
 public class BinarySearch {
 	

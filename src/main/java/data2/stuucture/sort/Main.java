@@ -1,9 +1,9 @@
-package data2.stuucture;
+package data2.stuucture.sort;
 
 import data2.stuucture.sort.Sort;
 import data2.stuucture.sort.cmp.*;
-import data2.stuucture.tools.Asserts;
-import data2.stuucture.tools.Integers;
+import data2.stuucture.sort.tools.Asserts;
+import data2.stuucture.sort.tools.Integers;
 
 import java.util.Arrays;
 

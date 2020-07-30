@@ -1,4 +1,4 @@
-package data2.stuucture.tools;
+package data2.stuucture.sort.tools;
 
 import java.util.Arrays;
 

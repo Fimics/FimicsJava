@@ -1,6 +1,5 @@
 package data2.stuucture.sort;
 
-import data2.stuucture.Student;
 import data2.stuucture.sort.cmp.SelectionSort;
 import data2.stuucture.sort.cmp.ShellSort;
 
