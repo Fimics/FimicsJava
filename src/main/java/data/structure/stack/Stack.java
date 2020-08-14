@@ -1,7 +1,9 @@
 package data.structure.stack;
 
-import com.mj.list.ArrayList;
-import com.mj.list.List;
+
+import data.structure.stack.list.ArrayList;
+import data.structure.stack.list.List;
+
 
 public class Stack<E> {
 	private List<E> list = new ArrayList<>();

@@ -1,6 +1,7 @@
 package data.structure.linkedlist.circle;
 
-import com.mj.AbstractList;
+
+import data.structure.linkedlist.AbstractList;
 
 public class SingleCircleLinkedList<E> extends AbstractList<E> {
 	private Node<E> first;
