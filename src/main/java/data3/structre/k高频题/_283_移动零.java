@@ -16,5 +16,4 @@ public class _283_移动零 {
             cur++;
         }
     }
-
 }
