@@ -2,7 +2,7 @@ package com.mic.kotlinjava
 
 import com.mic.kotlin.MyException
 
-fun main(args: Array<String>) {
+fun main() {
     val myException = MyException()
 //    myException.myMethod()
 

@@ -13,7 +13,7 @@ import com.mic.kotlin.MyVarargs
     Kotlin提供了原生类型数组来避免自动装箱与拆箱带来的成本：IntArray, DoubleArray, CharArray...
  */
 
-fun main(args: Array<String>) {
+fun main() {
     val myArray = MyArray()
     val intArray = intArrayOf(1, 2, 3, 4)
 

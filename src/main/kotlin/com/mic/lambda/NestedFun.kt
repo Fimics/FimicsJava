@@ -5,7 +5,7 @@ package com.mic.lambda
  */
 
 
-fun main(args: Array<String>) {
+fun main() {
     fun(x: Int, y: Int) = x + y
 
     fun(x: Int, y: Int): Int {

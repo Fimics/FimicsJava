@@ -46,7 +46,7 @@ class OuterClass5 {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(OuterClass2().InnerClass().innerMethod())
 
     println(OuterClass2().getName())

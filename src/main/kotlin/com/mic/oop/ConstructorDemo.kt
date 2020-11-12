@@ -65,7 +65,7 @@ class Student3 (val username: String = "zhangsan") {
 }
 
 
-fun main(args:Array<String>){
+fun main(){
     var myClass = MyClass("steven")
 
     val  mc = MyClass("zhangsan")

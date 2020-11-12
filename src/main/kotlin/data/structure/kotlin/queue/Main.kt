@@ -1,6 +1,6 @@
 package data.structure.kotlin.queue
 
-fun main(args: Array<String>) {
+fun main() {
     test2()
     test3()
 

@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.javaGetter
 
 class T(val x: Int)
 
-fun main(args: Array<String>) {
+fun main() {
     println(T::x.javaGetter)
     println(T::x.javaField)
 

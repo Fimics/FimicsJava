@@ -11,7 +11,7 @@ class MyTestClass12 {
     val price: Double = 34.5
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val clazz = MyTestClass12::class
     val instance = clazz.createInstance()
     var props = clazz.declaredMemberProperties

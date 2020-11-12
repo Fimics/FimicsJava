@@ -7,7 +7,7 @@ class MyTestClass<K, V> {
     var v: V? = null
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val myTestClassType = MyTestClass::class
     println(myTestClassType.typeParameters)
 

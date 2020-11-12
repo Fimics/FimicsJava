@@ -1,6 +1,6 @@
 package com.mic.kotlinjava
 
-fun main(args: Array<String>) {
+fun main() {
     val list = listOf<String>()
     println(list.myFilter())
 

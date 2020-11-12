@@ -5,7 +5,7 @@ package com.mic.lambda
 
  */
 
-fun main(args: Array<String>) {
+fun main() {
     var sum = ""
 
     val strings = arrayOf("hello", "world", "bye")

@@ -12,7 +12,7 @@ class MyTestClass8 {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var myTestClass8 = MyTestClass8::class
     var companionObj = myTestClass8.companionObject
 

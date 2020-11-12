@@ -38,7 +38,7 @@ class MyClass2 {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var myClass = MyClass1()
     myClass.myTest()
 }

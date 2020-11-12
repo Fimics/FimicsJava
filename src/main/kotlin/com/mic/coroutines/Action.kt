@@ -1,6 +1,6 @@
 package com.mic.coroutines
 
-fun main() {
+fun main(args:Array<String>) {
     test(5, action = {
         println("hello world")
     })

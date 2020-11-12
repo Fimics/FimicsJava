@@ -41,7 +41,7 @@ data class Person(val name: String, var age: Int, var address: String) {
 
 data class Person2(val name: String = "", var age: Int = 20, var address: String = "tianjin")
 
-fun main(args: Array<String>) {
+fun main() {
     var person = Person("zhangsan", 20, "beijing")
     println(person)
 

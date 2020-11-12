@@ -10,7 +10,7 @@ class MyGenerics<T>(t:T){
     }
 }
 
-fun main(args:Array<String>){
+fun main(){
     var generics: MyGenerics<String> = MyGenerics("hello generics")
     println(generics.v)
     var g = MyGenerics("hello g")

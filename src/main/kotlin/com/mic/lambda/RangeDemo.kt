@@ -2,7 +2,7 @@ package com.mic.lambda
 
 // Range
 
-fun main(args: Array<String>) {
+fun main() {
     var i = 4
 
     if (i in 1..5) {

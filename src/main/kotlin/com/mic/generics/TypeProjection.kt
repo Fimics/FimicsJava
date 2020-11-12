@@ -12,7 +12,7 @@ fun copy(from: Array<out Any>, to: Array<Any>) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val from: Array<Int> = arrayOf(1, 2, 3, 4)
     val to: Array<Any> = Array<Any>(4, {"hello" + it})
 

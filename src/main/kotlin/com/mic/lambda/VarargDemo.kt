@@ -29,7 +29,7 @@ fun <T> convert2List(vararg elements: T): List<T> {
     return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(convert2List("hello", "world", "hello world"))
 
     var elements = arrayOf("welcome", "bye", "test")

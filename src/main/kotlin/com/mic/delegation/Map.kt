@@ -30,7 +30,7 @@ class Student2(map: MutableMap<String, Any?>) {
     var address: String by map
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val student = Student(mapOf(
             "name" to "zhangsan",
             "address" to "beijing",

@@ -15,7 +15,7 @@ class MyTestClass10(var name: String) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val clazz = MyTestClass10::class
     val instance = clazz.createInstance()
 

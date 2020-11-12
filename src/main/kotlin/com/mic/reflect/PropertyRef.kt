@@ -24,7 +24,7 @@ val String.firstChar: Char
 
 class MyClass(val x: Int)
 
-fun main(args: Array<String>) {
+fun main() {
     println(::a)
     println(::a.get())
     println(::a.name)

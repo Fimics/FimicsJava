@@ -31,7 +31,7 @@ enum class Season3 {
     abstract fun getSeason(): Season3
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val seasons = Season.values()
     seasons.forEach { println(it)}
 

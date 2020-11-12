@@ -16,7 +16,7 @@ class MyTestClass5(value: Int) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val myTestClass5 = MyTestClass5::class
     val constructors = myTestClass5.constructors
 
