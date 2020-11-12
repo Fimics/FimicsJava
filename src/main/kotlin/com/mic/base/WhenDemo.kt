@@ -1,7 +1,7 @@
 package com.mic.base
 
 //相当于 if else ,swith case
-fun main(args: Array<String>) {
+fun main() {
     println(myPrint("hello"))
     println(myPrint("world"))
     println(myPrint("test"))

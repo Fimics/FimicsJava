@@ -5,7 +5,7 @@ package com.mic.base
 //给导入的文件起别名
 import com.mic.test.multiply as mu;
 
-fun main(args:Array<String>){
+fun main(){
     //val 定义常量 ，相当于java中final修饰的
    val a:Int=1;
 //    a=4

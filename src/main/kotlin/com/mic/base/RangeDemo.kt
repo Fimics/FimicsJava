@@ -1,6 +1,6 @@
 package com.mic.base
 
-fun main(args: Array<String>) {
+fun main() {
     val a = 5
     val b = 10
 

@@ -1,6 +1,6 @@
 package com.mic.base
 
-fun main(args: Array<String>) {
+fun main() {
     println(convert2Uppercase("hello world"))
     println(convert2Uppercase(23))
 }
