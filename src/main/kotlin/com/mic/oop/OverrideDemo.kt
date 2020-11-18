@@ -1,6 +1,7 @@
 package com.mic.oop
 
 open class MyParent {
+    //属性重写
     open val name: String = "parent"
 }
 

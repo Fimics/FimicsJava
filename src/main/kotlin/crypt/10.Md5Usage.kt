@@ -1,4 +1,4 @@
-package com.itheima.crypt
+package crypt
 
 /**
  * 消息摘要应用场景：用户登录

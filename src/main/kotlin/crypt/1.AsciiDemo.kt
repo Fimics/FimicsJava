@@ -1,4 +1,4 @@
-package com.itheima.crypt
+package crypt
 
 /**
  * Created by itheima

@@ -1,4 +1,4 @@
-package com.itheima.crypt
+package crypt
 
 import java.security.MessageDigest
 import kotlin.experimental.and

@@ -1,4 +1,4 @@
-package com.itheima.crypt
+package crypt
 
 import java.io.ByteArrayOutputStream
 import java.security.*

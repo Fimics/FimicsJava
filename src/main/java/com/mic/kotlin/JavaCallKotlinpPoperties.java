@@ -3,7 +3,7 @@ package com.mic.kotlin;
 import com.mic.kotlinjava.MyClass;
 import com.mic.kotlinjava.MyClassKt;
 
-public class JavaCallKotlinMyClass {
+class JavaCallKotlinpPoperties {
 
 
     public static void main(String[] args) {

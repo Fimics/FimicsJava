@@ -1,4 +1,4 @@
-package com.itheima.crypt
+package crypt
 
 import java.security.Key
 import javax.crypto.Cipher

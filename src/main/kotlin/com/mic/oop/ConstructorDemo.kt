@@ -39,6 +39,7 @@ class MyClass constructor(userName: String){
     }
 }
 
+//private val username: String, 这样写默认作为类的成员属性
 class Student (private val username: String, private val age: Int, private var address: String) {
 
     fun printInfo() {

@@ -2,7 +2,7 @@ package com.mic.lambda
 
 
 /*
-    内联函数（inline function）
+    内联函数（inline function）连接到一起
 
  */
 

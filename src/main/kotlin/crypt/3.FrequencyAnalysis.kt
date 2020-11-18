@@ -1,4 +1,4 @@
-package com.itheima.crypt
+package crypt
 
 import java.io.IOException
 import java.io.File

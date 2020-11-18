@@ -1,9 +1,7 @@
-package com.itheima.crypt
+package crypt
 
 import java.io.BufferedReader
-import java.io.BufferedWriter
 import java.io.FileReader
-import java.io.FileWriter
 
 /**
  * 对称加密应用场景演示
