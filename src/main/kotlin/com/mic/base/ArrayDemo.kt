@@ -16,4 +16,17 @@ fun main(args: Array<String>) {
             is String-> println("字符串")
         }
     }
+
+
+    println("------------indices-------")
+    for(i in myarray.indices){
+        println(myarray[i])
+    }
+
+
+    println( "----withIndex---")
+    for((index,value) in myarray.withIndex()){
+        println("the element at $index is $value")
+    }
+
 }

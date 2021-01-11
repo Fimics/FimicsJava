@@ -13,4 +13,6 @@ fun main(){
     }finally {
         println("finally invoked")
     }
+
+    println(result)
 }
