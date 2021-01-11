@@ -8,7 +8,11 @@ fun main(args: Array<String>) {
         4.不可变集合只能对元素进行读取和查询，可变集合才能对元素进行增减和赋值。
         5.相对于Java集合，Kotlin的不可变集合只拥有一部分功能，可变集合才拥有完整的功能。
     """.trimIndent()
-    val list: List<Int> = listOf(1, 2, 3)
+
+    val list1 = mutableListOf(1,2,3,4)
+    val list2: List<Int> = listOf(1)
+    list2.toMutableList()
+    val list: List<Int> = listOf(1)
 //    val nothing:Nothing =get(5);
 //    val nothing2:Nothing = get(10)
     println(list::class)
@@ -49,11 +53,13 @@ fun main(args: Array<String>) {
     println("no empty")
     println("kotlin".noEmpty())
 
+    //类型转换
+    var aInt:Int = 10;
+    var bLong :Long =20
+    aInt = bLong.toInt()
 
     var a:String?=null
     println(a?.length)
-
-
     println("null-->null")
 
 }
