@@ -9,6 +9,7 @@ fun main(){
     val result:Int?=try {
         parseInt(s)
     }catch (e:NumberFormatException){
+        println("null000")
         null
     }finally {
         println("finally invoked")

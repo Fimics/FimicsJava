@@ -6,6 +6,10 @@ import kotlinx.coroutines.*
 
 class Activity : CoroutineScope by CoroutineScope(Dispatchers.Default) {
 
+    val no:Int by lazy(LazyThreadSafetyMode.NONE) {
+        20
+    }
+
     fun destroy() {
         cancel()
     }

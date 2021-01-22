@@ -1,5 +1,5 @@
 package com.mic.lambda
-
+//https://blog.csdn.net/OneDeveloper/article/details/103625518
 /*
     带接收者的函数字面值
 

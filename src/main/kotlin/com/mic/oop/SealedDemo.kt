@@ -5,21 +5,21 @@ package com.mic.oop
  */
 
 //sealed是抽象的
-sealed class Calculator{}
+sealed class Calculator {}
 
-class Add:Calculator()
-class Subtract:Calculator()
-class Multiply:Calculator()
+class Add : Calculator()
+class Subtract : Calculator()
+class Multiply : Calculator()
 
-fun calculate(a:Int,b:Int,cal: Calculator)=when(cal){
-    is  Add ->a+b
-    is  Subtract->a-b
-    is  Multiply ->a*b
+fun calculate(a: Int, b: Int, cal: Calculator) = when (cal) {
+    is Add -> a + b
+    is Subtract -> a - b
+    is Multiply -> a * b
 }
 
 
-fun  main(){
-    println(calculate(1,2,Add()))
-    println(calculate(1,2,Subtract()))
-    println(calculate(1,2,Multiply()))
+fun main() {
+    println(calculate(1, 2, Add()))
+    println(calculate(1, 2, Subtract()))
+    println(calculate(1, 2, Multiply()))
 }

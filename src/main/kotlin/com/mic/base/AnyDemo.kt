@@ -11,5 +11,13 @@ fun convert2Uppercase(str: Any): String? {
         return str.toUpperCase()
     }
 
+    val a = arrayOf(1,2,3,4,5)
+    hello(1,2,4)
     return null
+}
+
+fun hello(vararg  a:Int){
+    for (i in a ){
+        println(i)
+    }
 }

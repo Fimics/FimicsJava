@@ -1,4 +1,4 @@
-package com.shengsiyuan.kotlin4
+package com.mic.delegation
 
 // 延迟属性： 指的是属性只在第一次被访问的时候才会计算，之后则会将之前的计算结果缓存起来供后续调用
 

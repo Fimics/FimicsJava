@@ -1,5 +1,6 @@
 package com.mic.coroutines
 
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -12,7 +13,7 @@ import kotlinx.coroutines.launch
 
 fun main(){
     //GlobalScope 可理解为协程本身，，它不阻塞当前线程，在后台创建一个新协程，也可以指定协程调度器
-    GlobalScope.launch {
+    GlobalScope.launch(Dispatchers.IO) {
         //delay 会阻塞当前协程执行，但不会阻塞当前线程执行
         delay(1000)
         println("kotlin coroutines")

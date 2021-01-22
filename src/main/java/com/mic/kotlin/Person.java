@@ -7,7 +7,7 @@ public class Person {
 
     private String name;
 
-    private boolean married;
+    public boolean married;
 
     private int age;
 

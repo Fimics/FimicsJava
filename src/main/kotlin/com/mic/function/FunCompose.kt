@@ -4,7 +4,7 @@ package com.mic.function
     函数组合
  */
 
-//f: (B)-> C  f函数输出B类型参数返回C类型结果
+//f: (B)-> C  f函数输入B类型参数返回C类型结果
 fun <A, B, C> myCompose(f: (B) -> C, g: (A) -> B): (A) -> C {
     return { x -> f(g(x)) }
 }

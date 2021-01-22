@@ -1,5 +1,4 @@
 package com.mic.kotlinjava
-import com.mic.kotlin.Person
 
 fun main(args: Array<String>) {
     val list = ArrayList<String>()
