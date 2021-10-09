@@ -22,11 +22,11 @@ fun main(args: Array<String>) {
     val person = Person()
 
     person.age = 20
-    person.isMarried = false
+//    person.isMarried = false
     person.name = "zhangsan"
 
     println(person.age)
-    println(person.isMarried)
+//    println(person.isMarried)
     println(person.name)
 
     println("----------")
