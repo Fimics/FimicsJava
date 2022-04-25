@@ -22,7 +22,7 @@ fun myMethod(factory: (x: Int) -> B) {
     也可以引用特定对象的属性
  */
 
-fun main(args: Array<String>) {
+fun main() {
     myMethod(::B)
 
     val str = "abc"

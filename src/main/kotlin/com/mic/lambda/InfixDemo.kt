@@ -15,7 +15,7 @@ class InfixTest(private var a: Int) {
     infix fun add(b: Int) = this.a + b
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val infixTest = InfixTest(2)
 
     // 以下两种方式等价

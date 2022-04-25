@@ -13,7 +13,7 @@ class MyTestClass6 {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val myTestClass6 = MyTestClass6::class
     val testClass6 = MyTestClass6()
 

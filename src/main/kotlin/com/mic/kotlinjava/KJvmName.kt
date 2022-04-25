@@ -10,7 +10,7 @@ class MyClass1 {
     fun getA() = 30
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val myClass = MyClass1()
 
     println(myClass.getA())

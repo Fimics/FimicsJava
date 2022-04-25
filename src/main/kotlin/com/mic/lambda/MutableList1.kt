@@ -1,6 +1,6 @@
 package com.mic.lambda
 
-fun main(args: Array<String>) {
+fun main() {
     val items = listOf(1, 2, 3, 4)
 
     println(items.first())

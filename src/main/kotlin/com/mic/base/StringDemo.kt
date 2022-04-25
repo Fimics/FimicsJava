@@ -1,7 +1,7 @@
 package com.mic.base
 
 //字符串输出
-fun main(args: Array<String>) {
+fun main() {
 
     var a: String = "hello \n world"
     println(a)

@@ -17,7 +17,7 @@ class MyTestClass7 {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     val myTestClass2 = MyTestClass2::class
     println(myTestClass2.memberProperties)
 

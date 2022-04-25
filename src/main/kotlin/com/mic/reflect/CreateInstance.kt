@@ -15,7 +15,7 @@ class MyTestClass9(value: Int = 0) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var myTestClass9 = MyTestClass9::class
     var myObj = myTestClass9.createInstance()
 

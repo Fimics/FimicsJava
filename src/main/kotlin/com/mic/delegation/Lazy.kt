@@ -14,7 +14,7 @@ val myLazyValue: Int by lazy(LazyThreadSafetyMode.PUBLICATION) {
     30
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(myLazyValue)
     println(myLazyValue)
 }

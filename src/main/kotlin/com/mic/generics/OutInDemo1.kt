@@ -97,7 +97,7 @@ class Boy: Consumer<ApplePear> {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
 
     // 对于"out"泛型来说，我们可以将子类型对象赋给父类型引用
     val producer1: Producer<Fruit> = FruitProducer()

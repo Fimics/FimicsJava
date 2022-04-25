@@ -2,7 +2,7 @@ package com.mic.lambda
 
 
 /*
-    内联函数（inline function）
+    内联函数（inline function）连接到一起
 
  */
 
@@ -11,6 +11,6 @@ package com.mic.lambda
  */
 inline fun myCalculate(a: Int, b: Int) = a + b
 
-fun main(args: Array<String>) {
+fun main() {
     println(myCalculate(1, 2))
 }

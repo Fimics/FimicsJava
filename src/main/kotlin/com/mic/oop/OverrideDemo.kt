@@ -1,6 +1,7 @@
 package com.mic.oop
 
 open class MyParent {
+    //属性重写
     open val name: String = "parent"
 }
 
@@ -8,7 +9,7 @@ class MyChild: MyParent() {
     override val name: String = "child"
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var myChild = MyChild()
     println(myChild.name)
 

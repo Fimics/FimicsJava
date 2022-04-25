@@ -1,6 +1,6 @@
 package com.mic.oop
 
-// object declaration，对象声明
+// object declaration(对象声明)
 object obj{
     fun method(){
         println("method")

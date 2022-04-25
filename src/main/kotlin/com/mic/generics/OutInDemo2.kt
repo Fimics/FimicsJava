@@ -31,7 +31,7 @@ class Star3<T>(private var t: T) {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     val star: Star<Number> = Star<Int>()
     val star2: Star<*> = star
 

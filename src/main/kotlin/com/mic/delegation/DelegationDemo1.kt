@@ -29,7 +29,7 @@ class MyPropertyClass {
     var str: String by MyDelegate()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val myPropertyClass = MyPropertyClass()
 
     myPropertyClass.str = "hello world"

@@ -9,7 +9,7 @@ package com.mic.lambda
     这一点非常类似于扩展函数
  */
 
-fun main(args: Array<String>) {
+fun main() {
 
     val subtract: Int.(other: Int) -> Int = { other -> this - other }
 

@@ -22,7 +22,7 @@ class C:A,B(){
     }
 }
 
-fun main(args:Array<String>){
+fun main(){
     var c = C()
     c.method()
 }

@@ -5,7 +5,7 @@ import kotlin.reflect.full.superclasses
 
 class MySerializable: Serializable, MyInterface
 
-fun main(args: Array<String>) {
+fun main() {
     val mySerializableType = MySerializable::class
     println(mySerializableType.superclasses)
 }

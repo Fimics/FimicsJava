@@ -1,6 +1,6 @@
 package com.mic.base
 
-fun main(args: Array<String>) {
+fun main() {
     println(convert2Int("ab"))
 
     printMultiply("2", "3")
@@ -37,6 +37,7 @@ fun printMultiply2(a: String, b: String) {
 
 //    println(a2Int * b2Int)
 
+    //返回值是Int? 类型并不是null类型所以下边的代码没有进来
     if (null == a2Int) {
         println("param not int")
     } else if (null == b2Int) {

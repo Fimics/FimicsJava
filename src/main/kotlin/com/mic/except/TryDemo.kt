@@ -4,7 +4,7 @@ import java.lang.Integer.parseInt
 import java.lang.NumberFormatException
 
 fun main(){
-    val s = "a"
+    var s = "3"
 
     val result:Int?=try {
         parseInt(s)

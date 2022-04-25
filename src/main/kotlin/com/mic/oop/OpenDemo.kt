@@ -61,7 +61,7 @@ open class Orange: Fruit() {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     var apple = Apple()
     apple.name()
     apple.expirationDate()

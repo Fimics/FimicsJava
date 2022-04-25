@@ -7,7 +7,7 @@ import java.awt.event.WindowListener
 import javax.swing.JButton
 import javax.swing.JFrame
 
-fun main(args: Array<String>) {
+fun main() {
     val jFrame = JFrame("My JFrame")
     val jButton = JButton("My JButton")
 

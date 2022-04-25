@@ -24,7 +24,7 @@ class ParameterizedConsumer<in T>{
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val parameterizedClass = ParameterizedClass<String>("hello world")
     var result = parameterizedClass.getValue()
 

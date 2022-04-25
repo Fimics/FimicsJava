@@ -25,5 +25,6 @@ class MyClass(myInterface: MyInterface):MyInterface by myInterface{
 
 fun main(){
     val myInterfaceImpl = MyInterfaceImpl("lishi")
+    myInterfaceImpl.MyPrint()
     MyClass(myInterfaceImpl).MyPrint()
 }

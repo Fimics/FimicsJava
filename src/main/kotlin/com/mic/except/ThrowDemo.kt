@@ -3,7 +3,7 @@ package com.mic.except
 // throw在Kotlin中是个表达式，这样我们可以将throw作为Elvis表达式的一部分
 // throw表达式的类型是一种特殊的类型：Nothing。
 // 在自己的代码中，可以使用Nothing来标记永远不会返回的函数
-fun main(args: Array<String>) {
+fun main() {
     val str: String? = "a"
     val str2 = str ?: throw IllegalArgumentException("值不能为空")
 

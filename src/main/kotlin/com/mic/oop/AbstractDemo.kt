@@ -9,5 +9,5 @@ open class BaseClass {
 
 abstract class ChildClass: BaseClass() {
 
-    override abstract fun method()
+   abstract override fun method()
 }

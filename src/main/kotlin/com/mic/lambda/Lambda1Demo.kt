@@ -4,7 +4,7 @@ package com.mic.lambda
 
 fun test(a: Int = 0, b: Int = 1) = println(a - b)
 
-fun main(args: Array<String>) {
+fun main() {
     test()
     test(2)
     test(b = 2) // 显式指定参数名
@@ -26,6 +26,7 @@ fun main(args: Array<String>) {
 
     test3(2, 3, {a, b -> println(a - b)})
 
+    //如果方法的最后一个参数是Lambda ，那个最后一个参数可以放到（）之外
     test3(2, 3) {
         a, b -> println(a - b)
     }

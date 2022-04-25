@@ -59,7 +59,7 @@ class People {
     val address: String by PeopleLauncher()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val people = People()
 
     println(people.name)

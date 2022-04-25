@@ -1,7 +1,7 @@
 package com.mic.base
 
 
-fun main(args: Array<String>) {
+fun main() {
     var array = listOf<String>("hello", "world", "hello world", "welcome", "goodbye")
 
     for (item in array) {

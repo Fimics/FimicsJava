@@ -28,7 +28,7 @@ abstract class MyAbstractClass {
     abstract fun printMyAbstractClassInfo()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var myObject = object: MyInterface {
         override fun myPrint(i: Int) {
             println("i的值是$i")

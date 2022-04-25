@@ -16,7 +16,7 @@ class MyExtensionProperty
 val MyExtensionProperty.name: String
     get() = "hello"
 
-fun main(args: Array<String>) {
+fun main() {
     var extensionTest = ExtensionTest();
 
     println(extensionTest.add(1, 2))

@@ -10,7 +10,7 @@ class MyGenerics<T>(t:T){
     }
 }
 
-fun main(args:Array<String>){
+fun main(){
     var generics: MyGenerics<String> = MyGenerics("hello generics")
     println(generics.v)
     var g = MyGenerics("hello g")
@@ -51,9 +51,9 @@ interface Collection<E> {
 void addAll(Collection<? extends E> items);
 }
 
-协变（covariant）Collection<String>就是Collection<? extends Object>的子类型。
+协变  上界（covariant）Collection<String>就是Collection<? extends Object>的子类型。
 
-逆变（controvariant）List<? super String> 这里放的只能是字符串以及字符串上层的类型
+逆变  下界（controvariant）List<? super String> 这里放的只能是字符串以及字符串上层的类型
 
 我们如果只从中读取数据，而不往里面写入内容，那么这样的对象叫做生产者；如果只向里面写入数据，而不从中读取数据，那么这样的数据叫做消费者。
 
