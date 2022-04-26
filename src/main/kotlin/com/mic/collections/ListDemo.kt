@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
     //forEachIndexed 带index(下标) 的元素遍历
     println(list.forEachIndexed { index, value -> if (value > 1) println(value) })
     //max  maxBy(it*it)
-    println(list.max())
+//    println(list.max())
     //take(n: Int): List<T> 挑出该集合前n个元素的子集合
     println(list.take(1))
     //drop(n: Int) 去除前n个元素返回剩下的元素的子集合
@@ -71,7 +71,7 @@ fun get(index: Int): Nothing {
 //扩展属性
 val <T> List<T>.lastIndex: Int get() = size - 1
 
-//扩展广东
+//扩展方法
 fun String.noEmpty(): Boolean {
     return !this.isEmpty()
 }

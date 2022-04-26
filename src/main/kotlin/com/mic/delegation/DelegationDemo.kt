@@ -2,6 +2,7 @@ package com.mic.delegation
 
 // 委托（delegation）
 // 类委托
+//https://blog.csdn.net/yanbober/article/details/109404014
 
 interface MyInterface{
     fun MyPrint()
@@ -19,12 +20,19 @@ class MyInterfaceImpl(val str:String):MyInterface{
    实现转移给委托对象来去进行
  */
 
-class MyClass(myInterface: MyInterface):MyInterface by myInterface{
+class MyClass(myInterface: MyInterface):MyInterface by myInterface{}
 
+//kotlin推荐的类委托实现的重写
+class MyDelegation(val myInterface: MyInterface):MyInterface by myInterface{
+    override fun MyPrint() {
+        myInterface.MyPrint()
+        println("MyDelegation")
+    }
 }
 
 fun main(){
     val myInterfaceImpl = MyInterfaceImpl("lishi")
     myInterfaceImpl.MyPrint()
     MyClass(myInterfaceImpl).MyPrint()
+    MyDelegation(myInterfaceImpl).MyPrint()
 }
