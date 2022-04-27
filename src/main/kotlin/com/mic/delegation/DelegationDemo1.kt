@@ -34,4 +34,5 @@ fun main() {
 
     myPropertyClass.str = "hello world"
     println(myPropertyClass.str)
+    println(myPropertyClass)
 }

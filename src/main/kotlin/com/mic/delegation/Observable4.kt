@@ -19,6 +19,7 @@ class MyPerson {
 
 class Person {
     //被委托属性
+    //可观测属性初值，10 是属性初值，当属性被赋值后会触发回调 lambada 表达式
     var age: Int by Delegates.observable(20) {
         prop, oldValue, newValue -> println("${prop.name}, oldValue: $oldValue, newValue: $newValue")
     }
@@ -30,6 +31,8 @@ class Person {
 
  */
 class Person2 {
+    //可观测属性初值，10 是属性初值，当属性被赋值前会触发回调 lambada 表达式，可以做到类似属性值赋值拦截器的效果
+    //这里当赋值小于等于0则丢弃
     var age: Int by Delegates.vetoable(20) {
         prop, oldValue, newValue -> when {
             oldValue <= newValue -> true
