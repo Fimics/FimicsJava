@@ -2,6 +2,7 @@ package com.mic.designpatterns
 
 /**
  * 责任链模式
+ * //TODO 偏函数实现责任链
  */
 
 data class ApplyEvent(val money: Int, val title: String)
