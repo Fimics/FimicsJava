@@ -1,4 +1,4 @@
-package com.mic.designpatterns
+package water.designpatterns
 
 /**
  * iterator 迭代器模式

@@ -1,4 +1,4 @@
-package com.mic.designpatterns
+package water.designpatterns
 
 import kotlin.properties.Delegates
 
@@ -14,7 +14,7 @@ interface StockUpdateListener{
 }
 
 
-class StockDisplay:StockUpdateListener{
+class StockDisplay: StockUpdateListener {
     override fun onRise(price: Int) {
         println("The latest stock price has risen to $price")
     }

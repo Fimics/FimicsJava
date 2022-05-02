@@ -1,4 +1,4 @@
-package com.mic.designpatterns
+package water.designpatterns
 
 //饿汉模式(1)
 object SingleTon {
@@ -52,7 +52,7 @@ class Instance2 private constructor() {
 
 fun main() {
     val singleton = SingleTon.get()
-    singleton.printx()
+    SingleTon.printx()
 
     val instance = Instance.getInstance
     instance?.add()

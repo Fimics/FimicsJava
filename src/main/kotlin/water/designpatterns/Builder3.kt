@@ -1,4 +1,4 @@
-package com.mic.designpatterns
+package water.designpatterns
 
 /**
  * 用具名可选参数而不是构建者
@@ -13,5 +13,5 @@ class Robot(val code:String, private val battery:String?=null, val height:Int? =
 }
 
 fun main(){
-    val robot =Robot(code = "008")
+    val robot = Robot(code = "008")
 }

@@ -1,4 +1,4 @@
-package com.mic.designpatterns
+package water.designpatterns
 
 /**
  * 责任链模式
@@ -62,9 +62,9 @@ fun mustGreaterThan5(x:Int):Boolean{
 
 
 fun main(args:Array<String>){
-    val college=College(null)
-    val president=President(college)
-    val groupLeader=GroupLeader(president)
+    val college= College(null)
+    val president= President(college)
+    val groupLeader= GroupLeader(president)
 
     groupLeader.handleEvent(ApplyEvent(10,"buy a pen"))
     groupLeader.handleEvent(ApplyEvent(200,"team building"))

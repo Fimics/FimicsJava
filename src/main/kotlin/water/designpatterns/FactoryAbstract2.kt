@@ -1,12 +1,12 @@
-package com.mic.designpatterns
+package water.designpatterns
 
 /**
  * 内联函数简化抽象工厂
  */
 
-class Dell(override val cpu: String="dell"):Computer
-class Asus(override val cpu: String="asus"):Computer
-class Acer(override val cpu: String="acer"):Computer
+class Dell(override val cpu: String="dell"): Computer
+class Asus(override val cpu: String="asus"): Computer
+class Acer(override val cpu: String="acer"): Computer
 
 
 //abstract class AbstractFactory{
@@ -21,28 +21,28 @@ class Acer(override val cpu: String="acer"):Computer
 
 //内联函数简化抽象工厂
 abstract class AbstractFactory{
-    abstract fun produce():Computer
+    abstract fun produce(): Computer
 
     companion object{
-        inline operator fun<reified T:Computer> invoke():AbstractFactory=when(T::class){
-            Dell::class ->DellFactory()
-            Asus::class ->AsusFactory()
-            Acer::class ->AcerFactory()
+        inline operator fun<reified T: Computer> invoke(): AbstractFactory =when(T::class){
+            Dell::class -> DellFactory()
+            Asus::class -> AsusFactory()
+            Acer::class -> AcerFactory()
             else->throw IllegalArgumentException()
         }
     }
 }
 
 class DellFactory: AbstractFactory() {
-    override fun produce()=Dell()
+    override fun produce()= Dell()
 }
 
-class AsusFactory:AbstractFactory(){
-    override fun produce()=Asus()
+class AsusFactory: AbstractFactory(){
+    override fun produce()= Asus()
 }
 
-class AcerFactory :AbstractFactory(){
-    override fun produce()=Acer()
+class AcerFactory : AbstractFactory(){
+    override fun produce()= Acer()
 }
 
 fun main(){
