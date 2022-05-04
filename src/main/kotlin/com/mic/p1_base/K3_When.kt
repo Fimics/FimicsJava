@@ -1,4 +1,4 @@
-package com.mic.base
+package com.mic.p1_base
 
 //相当于 if else ,swith case
 fun main() {
@@ -44,11 +44,11 @@ fun main() {
 }
 
 fun myPrint(str: String): String {
-    when (str) {
-        "hello" -> return "HELLO"
-        "world" -> return "WORLD"
-        "hello world" -> return "HELLO WORLD"
-        else -> return "other input"
+    return when (str) {
+        "hello" -> "HELLO"
+        "world" -> "WORLD"
+        "hello world" -> "HELLO WORLD"
+        else -> "other input"
     }
 }
 

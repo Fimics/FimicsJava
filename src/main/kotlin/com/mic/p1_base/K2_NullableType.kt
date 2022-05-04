@@ -1,12 +1,12 @@
-package com.mic.base
+package com.mic.p1_base
 
+/**
+ * Int ? 可空类型
+ */
 fun main() {
     println(convert2Int("ab"))
-
     printMultiply("2", "3")
-
     printMultiply("2", "a")
-
     printMultiply2("3", "4")
 }
 

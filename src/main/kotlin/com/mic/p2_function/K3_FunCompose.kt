@@ -1,4 +1,4 @@
-package com.mic.function
+package com.mic.p2_function
 
 /*
     函数组合

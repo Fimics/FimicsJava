@@ -1,4 +1,4 @@
-package com.mic.base
+package com.mic.p1_base
 
 fun main() {
     var array: IntArray = intArrayOf(1, 2, 3, 4, 5)

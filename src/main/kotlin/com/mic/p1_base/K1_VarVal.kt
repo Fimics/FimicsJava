@@ -1,8 +1,10 @@
-package com.mic.base
+package com.mic.p1_base
 //导入其他文件
 //import com.mic.test.multiply;
 
-//给导入的文件起别名
+/**
+ * 给导入的文件起别名
+ */
 import com.mic.test.multiply as mu;
 
 fun main(){

@@ -1,4 +1,4 @@
-package com.mic.lambda
+package com.mic.p2_function
 
 /*
     中缀符号 （infix notation）

@@ -1,4 +1,4 @@
-package com.mic.base
+package com.mic.p1_base
 
 //字符串输出
 fun main() {

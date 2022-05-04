@@ -1,4 +1,4 @@
-package com.mic.base
+package com.mic.p1_base
 
 //https://www.jianshu.com/p/97d6f55dd4c3  Kotlin-数组与集合-Array
 fun main(args: Array<String>) {
