@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 class EmptyClass
 class EmptyClass1{}
@@ -8,8 +8,7 @@ class EmptyClass1{}
 
 // 如果primary构造方法没有任何注解或是可见性关键字修饰，那么constructor关键字可省略
 //constructor(userName: String) 这个就是主构造方法
-class MyClass constructor(userName: String){
-    private  var username:String
+class MyClass constructor(var userName: String){
     private  var age:Int = 0;
     private  var address:String
 
@@ -17,7 +16,7 @@ class MyClass constructor(userName: String){
     //初始化代码块，主要给类的属性赋初值的，在初始化代码块中可以使用构造方法的参数
     init {
         println(userName)
-        this.username =userName;
+        userName ="hello";
         this.age=20;
         this.address="beijing"
     }
@@ -25,7 +24,6 @@ class MyClass constructor(userName: String){
     //secondary构造方法 必须直接或间接调用primary构造方法 用冒号分隔是直接调用
     constructor(userName: String,age:Int):this(userName){
         println(userName+""+ age)
-        this.username = userName
         this.age = age
         this.address = "beijing"
     }
@@ -35,7 +33,7 @@ class MyClass constructor(userName: String){
     }
 
     override fun toString(): String {
-        return "MyClass(username='$username', age=$age, address='$address')"
+        return "MyClass( age=$age, address='$address')"
     }
 }
 

@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 // 可见性 visibility
 // Kotlin提供了4种可见性修饰符：private, protected, internal(这个和java不一样，其他的和java中一样), public

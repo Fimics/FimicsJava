@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 // object declaration(对象声明)
 object obj{

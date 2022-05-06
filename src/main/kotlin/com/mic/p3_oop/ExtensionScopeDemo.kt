@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 // 扩展的作用域
 /*

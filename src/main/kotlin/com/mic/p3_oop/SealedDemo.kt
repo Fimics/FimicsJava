@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 /*
     密封类（sealed class） 类似java 枚举 但有不同点

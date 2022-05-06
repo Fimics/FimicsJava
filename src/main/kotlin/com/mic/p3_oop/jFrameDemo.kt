@@ -1,6 +1,5 @@
-package com.mic.oop
+package com.mic.p3_oop
 
-import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import java.awt.event.WindowEvent
 import java.awt.event.WindowListener

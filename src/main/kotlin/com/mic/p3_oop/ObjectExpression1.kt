@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 /*
     匿名对象只能在局部变量范围内或是被private修饰的成员变量范围内才能被识别出其真正的类型。

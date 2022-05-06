@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 // 对象表达式（object expression）
 // Java当中匿名内部类在很多场景下都得到了大量使用

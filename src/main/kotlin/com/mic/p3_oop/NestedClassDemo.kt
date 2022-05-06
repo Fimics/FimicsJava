@@ -1,4 +1,4 @@
-package com.mic.oop
+package com.mic.p3_oop
 
 fun main(){
    println(OuterClass.NestedClass().nestedMethod())
