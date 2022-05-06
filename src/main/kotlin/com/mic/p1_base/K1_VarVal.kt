@@ -3,6 +3,11 @@ package com.mic.p1_base
 //import com.mic.test.multiply;
 
 /**
+ * 低功耗蓝牙(BLE)协议栈
+ * https://blog.csdn.net/qq_25727979/article/details/122110355
+ */
+
+/**
  * 给导入的文件起别名
  */
 import com.mic.test.multiply as mu;
