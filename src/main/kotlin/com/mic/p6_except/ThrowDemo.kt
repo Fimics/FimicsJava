@@ -1,4 +1,6 @@
-package com.mic.except
+package com.mic.p6_except
+
+import java.io.IOException
 
 // throw在Kotlin中是个表达式，这样我们可以将throw作为Elvis表达式的一部分
 // throw表达式的类型是一种特殊的类型：Nothing。
@@ -25,4 +27,9 @@ fun main() {
 
 fun myMethod(message: String): Nothing {
     throw IllegalArgumentException(message)
+}
+
+@Throws(IOException::class)
+fun testException(){
+
 }

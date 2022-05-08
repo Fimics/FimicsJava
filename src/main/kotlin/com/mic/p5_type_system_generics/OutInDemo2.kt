@@ -1,4 +1,4 @@
-package com.mic.generics
+package com.mic.p5_type_system_generics
 
 // star projection (星投影)
 

@@ -1,4 +1,4 @@
-package com.mic.except
+package com.mic.p6_except
 
 import java.lang.Integer.parseInt
 import java.lang.NumberFormatException

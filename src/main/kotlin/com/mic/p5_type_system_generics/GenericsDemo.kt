@@ -1,4 +1,4 @@
-package com.mic.generics
+package com.mic.p5_type_system_generics
 
 // 泛型（generics），表示变量类型的参数化
 

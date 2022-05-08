@@ -1,4 +1,4 @@
-package com.mic.generics
+package com.mic.p5_type_system_generics
 
 
 // 在Kotlin中：Consumer in, Producer out
