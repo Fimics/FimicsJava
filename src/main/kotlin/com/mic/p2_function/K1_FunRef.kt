@@ -1,6 +1,6 @@
 package com.mic.p2_function
 
-/*
+/**
     函数（方法）引用
 
     支持重载

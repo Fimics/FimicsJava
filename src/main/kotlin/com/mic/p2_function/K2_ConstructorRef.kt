@@ -1,6 +1,6 @@
 package com.mic.p2_function
 
-/*
+/**
     构造方法引用（Constructor Reference）
 
     要求有两点：
@@ -17,9 +17,9 @@ fun myMethod(factory: (x: Int) -> B) {
     println(b.x)
 }
 
-/*
-    我们可以引用特定对象的一个实例方法
-    也可以引用特定对象的属性
+/**
+ * 我们可以引用特定对象的一个实例方法
+ *也可以引用特定对象的属性
  */
 
 fun main() {

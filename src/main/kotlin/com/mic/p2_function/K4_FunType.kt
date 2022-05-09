@@ -4,7 +4,7 @@ package com.mic.p2_function
 /**
  * 函数类型
  *，1.Kotlin还支持为声明参数指定名字，
- * (errCode:Int,errMsg:String)>Unit
+ * (errCode:Int,errMsg:String)->Unit
  *
  *
  * 2.(errCode:Int,errMsg:String?)->Unit
@@ -13,7 +13,7 @@ package com.mic.p2_function
  * ((errCode:Int,errMsg:String?)->Unit)?
  *
  * 4.高阶函数还支持返回另一个函数，所以还可以这么做：(Int)->((Int)->Unit)
- * 这表示传入一个类型为Int的参数，然后返回另一个类型为（Int）>Unit的函数
+ * 这表示传入一个类型为Int的参数，然后返回另一个类型为（Int）->Unit的函数
  * 。简化它的表达，我们可以把后半部分的括号给省略：
  * (Int)->Int->Unit需要注意的是，
  *
