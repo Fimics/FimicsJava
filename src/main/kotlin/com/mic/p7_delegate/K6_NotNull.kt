@@ -1,4 +1,4 @@
-package com.mic.delegation
+package com.mic.p7_delegate
 
 import kotlin.properties.Delegates
 
