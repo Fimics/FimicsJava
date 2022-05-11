@@ -1,4 +1,4 @@
-package com.mic.p5_type_system_generics
+package com.mic.p5_generics
 
 /**
  * 1.Kotlin中的Int类型等同于int；

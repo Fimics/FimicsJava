@@ -11,7 +11,7 @@ public class EnumSingleton {
 
         private final EnumSingleton instance;
 
-       private Holder() {
+        private Holder() {
             instance = new EnumSingleton();
         }
 

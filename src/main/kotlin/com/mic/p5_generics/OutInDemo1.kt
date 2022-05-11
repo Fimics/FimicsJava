@@ -1,4 +1,4 @@
-package com.mic.p5_type_system_generics;
+package com.mic.p5_generics;
 
 /*
     Kotlin: 声明处协变； Java： 使用处协变

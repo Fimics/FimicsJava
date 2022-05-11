@@ -10,8 +10,6 @@ import java.nio.channels.SocketChannel
 
 /**
  * NIO服务端
- *
- * @author -琴兽-
  */
 class NIOServer {
     // 通道管理器
@@ -76,7 +74,7 @@ class NIOServer {
             handlerAccept(key)
             // 获得了可读的事件
         } else if (key.isReadable) {
-            handelerRead(key)
+            handlerRead(key)
         }
     }
 
@@ -107,7 +105,7 @@ class NIOServer {
      * @throws IOException
      */
     @Throws(IOException::class)
-    fun handelerRead(key: SelectionKey) {
+    fun handlerRead(key: SelectionKey) {
         // 服务器可读取消息:得到事件发生的Socket通道
         val channel = key.channel() as SocketChannel
         // 创建读取的缓冲区

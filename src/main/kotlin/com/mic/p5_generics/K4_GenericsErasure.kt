@@ -1,4 +1,4 @@
-package com.mic.p5_type_system_generics
+package com.mic.p5_generics
 
 import java.lang.reflect.ParameterizedType
 import java.lang.reflect.Type
@@ -138,7 +138,7 @@ inline fun <reified T> getType(): Class<T> {
  *  而用reified来实例化的参数类型的内联函数则不能在Java中调用，因为它永远是需要内联的。
  */
 
-//6.一个支持协变的list
+//6. out 一个支持协变的list
 /**
  * 如果在定义的泛型类和泛型方法的泛型参数前面加上out关键词，说明这个泛型类及泛型方法是协变，
  * 简单来说类型A是类型B的子类型，那么Generic<A>也是Generic<B>的子类型，比如在Kotlin中String是Any的子类型，
@@ -146,10 +146,103 @@ inline fun <reified T> getType(): Class<T> {
  * 但是我们上面说过，如果允许这种行为，将会出现类型不安全的问题。那么Kotlin是如何解决这个问题的？
  */
 
-fun kotlinList() {
+private fun kotlinList() {
     val stringList: List<String> = ArrayList<String>()
-//    stringList.add("kotlin")//编译报错，不允许
+    //因为这个List支持协变，那么它将无法添加元素，只能从里面读取内容。
+    //stringList.add("kotlin")//编译报错，不允许
+    //List中本来就没有定义add方法，也没有remove及replace等方法，也就是说这个List一旦创建就不能再被修改，
+    // 这便是将泛型声明为协变需要付出的代价。那么为什么泛型协变会有这个限制呢？ 原因如下
 
+    /**
+     * val stringList:List<String>=ArrayList<String>()
+     * val anyList:List<Any>=stringList
+     * anyList.add(1)
+     * val str:String=anyList.get(0)//Int无法转换为String
+     *
+     * 如支持协变的List允许插入新对象，那么它就不再是类型安全的了，也就违背了泛型的初衷。
+     * 所以我们可以得出结论：支持协变的List只可以读取，而不可以添加。其实从out这个关键词也可以看出，
+     * out就是出的意思，可以理解为List是一个只读列表。在Java中也可以声明泛型协变，
+     * 用通配符及泛型上界来实现协变：<？extends Object>，其中Object可以是任意类。比如在Java中声明一个协变的List：
+     *
+     * public interface List< ? extends T>{......}
+     *
+     */
+
+}
+
+/**
+ * 7.
+ * 另外需要注意的一点的是：通常情况下，若一个泛型类Generic<outT>支持协变，那么它里面的方法的参数类型不能使用T类型，
+ * 因为一个方法的参数不允许传入参数父类型的对象，因为那样可能导致错误。但在Kotlin中，你可以添加@UnsafeVariance注解来解除这个限制，
+ * 比如上面List中的indexOf等方法。
+ */
+private class KotlinList<out T>() {
+
+    //用out 声明的泛型参数类型，不能作为方法的参数类型，但可以作为方法的返回值类型，而in 正好相反
+    //@UnsafeVariance 可以打破这个限制，但会很危险
+    fun list(t: @UnsafeVariance T) {
+    }
+}
+
+/**
+ * 8.in
+ * 一个支持逆变的Comparator
+ *
+ * 键词in，跟out一样，它也使泛型有了另一个特性，那就是逆变。简单来说，假若类型A是类型B的子类型，
+ * 那么Generic<B>反过来是Generic<A>的子类型，所以我们就可以将一个numberComparator作为doubleComparator传入。
+ * 那么将泛型参数声明为逆变会不会有什么限制呢？
+ */
+
+private fun kotlinMutableList() {
+
+    val numberComparator = Comparator<Number> { n1, n2 ->
+        n1.toDouble().compareTo(n2.toDouble())
+    }
+    val mutableListInt = mutableListOf(5, 2, 3)
+    mutableListInt.sortWith(numberComparator)
+    println(mutableListInt)
+
+    val mutableListDouble = mutableListOf(5.0, 2.0, 3.0)
+    mutableListDouble.sortWith(numberComparator)
+    println(mutableListDouble)
+}
+
+//9.，用out关键字声明的泛型参数类型将不能作为方法的参数类型，但可以作为方法的返回值类型，而in刚好相反。
+
+private interface DataSource<out T> {
+    fun next(): T
+}
+
+//in就是入的意思，可以理解为消费内容，所以我们可以将这个列表看作一个可写、可读功能受限的列表，获取的值只能为Any类型。在Java中使用<？superT>可以达到相同效果。
+
+private interface DataStore<in T> {
+    fun find(t: T);
+}
+
+private class DataSourceImpl<out T> constructor(val t: T) : DataSource<T> {
+
+    constructor(t: T, t2: T) : this(t) {}
+
+    init {}
+
+    override fun next(): T {
+        return t
+    }
+}
+
+private class DataStoreImpl<in T> : DataStore<T> {
+    override fun find(t: T) {
+    }
+}
+
+private class DataSourceStoreImpl<in T, out R>() : DataStore<T>, DataSource<R> {
+    override fun next(): R {
+        TODO("Not yet implemented")
+    }
+
+    override fun find(t: T) {
+        TODO("Not yet implemented")
+    }
 }
 
 fun main() {
@@ -175,5 +268,14 @@ fun main() {
     //匿名内部类在初始化的时候就会绑定父类或父接口的相应信息，这样就能通过获取父类或父接口的泛型类型信息来实现我们的需求。
 // 你可以利用这样一个类来获取任何泛型的类型，我们常用的Gson也是使用了相同的设计。
 
+    //8.
+    println("----------8---------")
+    kotlinMutableList()
+
+    //9.
+    val dataSourceImpl = DataSourceImpl<Int>(3)
+    println(dataSourceImpl.next())
+    val dataSource1 = DataSourceImpl<String>("hello in out")
+    println(dataSource1.next())
 
 }

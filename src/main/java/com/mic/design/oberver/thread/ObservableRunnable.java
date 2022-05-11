@@ -6,21 +6,21 @@ package com.mic.design.oberver.thread;
 @SuppressWarnings("unused")
 public abstract class ObservableRunnable implements Runnable {
 
-    final protected  ThreadLifeCycle threadLifeCycle;
+    final protected ThreadLifeCycle threadLifeCycle;
 
     public ObservableRunnable(ThreadLifeCycle threadLifeCycle) {
         this.threadLifeCycle = threadLifeCycle;
     }
 
-    protected  void notifyChanged(final RunnableEvent event){
-         threadLifeCycle.onEvent(event);
+    protected void notifyChanged(final RunnableEvent event) {
+        threadLifeCycle.onEvent(event);
     }
 
-    public enum RunnableState{
-        RUNNING,ERROR,DONE;
+    public enum RunnableState {
+        RUNNING, ERROR, DONE;
     }
 
-    public static class RunnableEvent{
+    public static class RunnableEvent {
 
         private final RunnableState state;
         private final Thread thread;
