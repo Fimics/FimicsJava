@@ -1,4 +1,4 @@
-package com.mic.lambda
+package com.mic.p8_lambda
 
 fun main() {
     val items = listOf(1, 2, 3, 4)

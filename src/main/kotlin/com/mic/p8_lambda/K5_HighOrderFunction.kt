@@ -1,4 +1,4 @@
-package com.mic.lambda
+package com.mic.p8_lambda
 
 /*
     高阶函数（high-order function）与lambda

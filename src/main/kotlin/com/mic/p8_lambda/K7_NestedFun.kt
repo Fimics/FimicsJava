@@ -1,4 +1,4 @@
-package com.mic.lambda
+package com.mic.p8_lambda
 
 /*
     匿名函数

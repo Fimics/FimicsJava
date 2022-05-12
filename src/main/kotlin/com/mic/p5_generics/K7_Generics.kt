@@ -6,7 +6,7 @@ class MyGenerics<T>(t:T){
     var v :T=t
 
     init {
-//        this.v=t
+        this.v=t
     }
 }
 
