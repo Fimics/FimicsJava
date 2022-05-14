@@ -1,4 +1,4 @@
-package com.mic.collections
+package com.mic.p9_collections
 
 fun main(args: Array<String>) {
     """

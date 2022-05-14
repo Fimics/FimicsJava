@@ -1,7 +1,6 @@
 package com.mic.coroutines
 
 import kotlinx.coroutines.*
-import java.util.concurrent.CancellationException
 
 /*
     协程的取消与超时

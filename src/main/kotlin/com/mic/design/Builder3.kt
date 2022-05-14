@@ -1,4 +1,4 @@
-package water.designpatterns
+package com.mic.design
 
 /**
  * 用具名可选参数而不是构建者
