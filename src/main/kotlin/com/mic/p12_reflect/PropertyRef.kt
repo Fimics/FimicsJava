@@ -1,4 +1,4 @@
-package com.mic.reflect
+package com.mic.p12_reflect
 
 /*
     属性引用 （Property Reference）

@@ -1,4 +1,4 @@
-package com.mic.reflect
+package com.mic.p12_reflect
 
 import java.io.Serializable
 import kotlin.reflect.full.superclasses
