@@ -1,7 +1,7 @@
 package com.mic.kotlin;
 
-import com.mic.kotlinjava.MyClass;
-import com.mic.kotlinjava.MyClassKt;
+import com.mic.p13_kotlinjava.MyClass;
+import com.mic.p13_kotlinjava.MyClassKt;
 
 class JavaCallKotlinpPoperties {
 

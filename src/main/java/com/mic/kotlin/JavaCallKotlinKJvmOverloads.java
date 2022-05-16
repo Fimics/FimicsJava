@@ -1,6 +1,6 @@
 package com.mic.kotlin;
 
-import com.mic.kotlinjava.MyClass3;
+import com.mic.p13_kotlinjava.MyClass3;
 
 public class JavaCallKotlinKJvmOverloads {
     public static void main(String[] args) {

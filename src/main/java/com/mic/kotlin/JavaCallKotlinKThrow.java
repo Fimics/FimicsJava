@@ -1,6 +1,6 @@
 package com.mic.kotlin;
 
-import com.mic.kotlinjava.MyClass4;
+import com.mic.p13_kotlinjava.MyClass4;
 
 import java.io.FileNotFoundException;
 public class JavaCallKotlinKThrow {

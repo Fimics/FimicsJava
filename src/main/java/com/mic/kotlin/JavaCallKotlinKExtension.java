@@ -1,6 +1,6 @@
 package com.mic.kotlin;
 
-import com.mic.kotlinjava.KExtensionListKt;
+import com.mic.p13_kotlinjava.KExtensionListKt;
 
 import java.util.ArrayList;
 import java.util.List;

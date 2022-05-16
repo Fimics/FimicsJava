@@ -1,6 +1,6 @@
 package com.mic.kotlin;
 
-import com.mic.kotlinjava.Person;
+import com.mic.p13_kotlinjava.Person;
 
 public class JavaCallKotlinKJvmField {
 

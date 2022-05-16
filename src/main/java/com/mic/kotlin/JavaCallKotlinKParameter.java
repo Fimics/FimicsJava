@@ -1,6 +1,6 @@
 package com.mic.kotlin;
 
-import com.mic.kotlinjava.MyClass5;
+import com.mic.p13_kotlinjava.MyClass5;
 
 public class JavaCallKotlinKParameter {
     public static void main(String[] args) {

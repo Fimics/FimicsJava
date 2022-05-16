@@ -1,6 +1,6 @@
 package com.mic.kotlin;
 
-import com.mic.kotlinjava.HelloWorld;
+import com.mic.p13_kotlinjava.HelloWorld;
 
 public class JavaCallKotlinKName {
 
