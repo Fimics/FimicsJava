@@ -14,6 +14,7 @@ object Mapper {
     fun <A : Any> toMap2(a: A): Map<String, Any?> {
         var result = a::class.memberProperties.map { m ->
             val p = m as KProperty<*>
+            //KProperty的call函数实际上是直接调用Getter，这是更合理的方案。
             p.name to p.call(a)
         }.toMap()
         return result

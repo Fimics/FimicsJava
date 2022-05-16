@@ -20,5 +20,7 @@ fun main() {
     val myTestClass5 = MyTestClass5::class
     val constructors = myTestClass5.constructors
 
-    println(constructors)
+
+    println(myTestClass5)
+    constructors.forEach { println(it) }
 }

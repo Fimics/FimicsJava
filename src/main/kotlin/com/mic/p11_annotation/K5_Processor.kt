@@ -54,5 +54,5 @@ class MapperProcessor : AbstractProcessor() {
 }
 
 fun main() {
-
+    val processor=MapperProcessor()
 }

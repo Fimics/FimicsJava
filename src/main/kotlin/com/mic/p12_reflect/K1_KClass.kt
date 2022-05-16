@@ -26,7 +26,7 @@ fun main(){
 
     //成员函数
     val  class3zz = MyTestClass3::class
-    println(class3zz.memberFunctions)
+    class3zz.memberFunctions.forEach{ println(it) }
 
     val son:Parent =Son()
     val daughter:Parent=Daughter()
