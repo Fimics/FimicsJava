@@ -1,4 +1,4 @@
-package water.designpatterns
+package com.mic.p14_design
 
 /**
  * 模板方法模式，高阶函数代替继承

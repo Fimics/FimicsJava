@@ -1,4 +1,4 @@
-package water.designpatterns
+package com.mic.p14_design
 
 /**
  * 内联函数简化抽象工厂

@@ -1,4 +1,4 @@
-package water.designpatterns
+package com.mic.p14_design
 
 //饿汉模式(1)
 object SingleTon {
