@@ -20,7 +20,7 @@ fun unsafeInterpreter(strs: List<Format>) {
 //纯函数方式
 fun stringInterpreter(str:List<Format>)= str.fold(""){ text,s->
     when(s){
-        is Print -> println( text+s.text
+        is Print ->  text+s.text
         is NewLine -> text+"\n"
     }
 }

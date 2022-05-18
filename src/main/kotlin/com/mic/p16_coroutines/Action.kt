@@ -1,4 +1,4 @@
-package com.mic.coroutines
+package com.mic.p16_coroutines
 
 fun main(args:Array<String>) {
     test(5, action = {

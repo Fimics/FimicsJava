@@ -1,6 +1,6 @@
 package com.mic.p8_lambda
 
-import com.mic.coroutines.Activity
+import com.mic.p16_coroutines.Activity
 
 
 /**

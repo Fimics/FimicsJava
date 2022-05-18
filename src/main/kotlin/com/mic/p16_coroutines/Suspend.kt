@@ -1,4 +1,4 @@
-package com.mic.coroutines
+package com.mic.p16_coroutines
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
