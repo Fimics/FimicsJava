@@ -6,7 +6,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 /**
- * 1. 协程是一个无有限级的子程序调度组件，允许子程序在特定的地方挂起恢复，线程包含于进程，进程包含于线程，只在内存足够，一个线程中可以有任意多个协程，
+ * 1. 协程是一个无优先级的子程序调度组件，允许子程序在特定的地方挂起恢复，线程包含于进程，进程包含于线程，只在内存足够，一个线程中可以有任意多个协程，
  *    但某一时刻只能有一个协程在运行，多个协程分享该线程分配到的计算机资源，
  *
  * 2.协程的挂起不需要阻塞线程，几乎是无代价的，协程由开发者控制，所以协程也像用户态的线程，非常轻量级。
@@ -33,8 +33,8 @@ import kotlinx.coroutines.runBlocking
  *       Default是一个协程调度器，其指定的线程为共有线程持，线程数量至少为2 ，最大与CPU数量相同
  *
  * 7.Job & Deferred
- *    1.job 任务封装了协程中需要执行的代码逻辑，job可以取消并且有简单的生命周期，它有三种状态
- *    2.Deferred //TODO
+ *    1.job 任务封装了协程中需要执行的代码逻辑，job可以取消并且有简单的生命周期，它有三种状态,launch也会返回一个job对象但是没有返回值
+ *    2.Deferred  ，Deferred 值是一个非阻塞可取消的future,它是一个带有结果的job
  *
  * 8.CoroutineScope.Launch{}
  *     是常用的 CoroutineBuilders 不阻塞当前线程，在后台创建一个新协程，也可以指定协程调度器
@@ -50,6 +50,12 @@ import kotlinx.coroutines.runBlocking
  *11.async{}
  *    CoroutineScope.async{}可以实现与 launcher builder一样的效果，在后台创建一个新的协程，唯一的区别是它有返回值
  *    因为CoroutineScope.async{} 返回的是一个Deferred类型
+ */
+
+/**
+ * 1.CoroutineContext
+ *   协程上下文是协程中的重要概念，它管理了协程的生命周期，线程调度，异常处理等功能
+ *
  */
 
 fun main() = runBlocking {
