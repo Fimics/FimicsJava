@@ -1,8 +1,7 @@
-package com.mic.flow
+package com.mic.p17_flow
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.asFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.transform
 import kotlinx.coroutines.runBlocking
 

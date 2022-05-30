@@ -23,7 +23,7 @@ fun main() = runBlocking {
 
         Thread.sleep(6000)
 
-        // 尝试注释掉如下两行代码
+        // 尝试注释掉如下两行代码 i
         value1.start()
         value2.start()
 

@@ -1,4 +1,4 @@
-package com.mic.flow
+package com.mic.p17_flow
 
 import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.map

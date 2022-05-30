@@ -18,7 +18,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-reflect"
     testImplementation "org.jetbrains.kotlin:kotlin-test"
     testImplementation "org.jetbrains.kotlin:kotlin-test-junit"
-    implementation 'io.netty:netty-all:4.1.76.Final'
+//    implementation 'io.netty:netty-all:4.1.76.Final'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
 }
 
