@@ -20,6 +20,10 @@ dependencies {
     testImplementation "org.jetbrains.kotlin:kotlin-test-junit"
 //    implementation 'io.netty:netty-all:4.1.76.Final'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+
+    implementation 'com.typesafe.akka:akkaactor_2.12:2.5.14'
+    implementation 'org.scalalang:scalalibrary:2.12.4'
+
 }
 
 sourceCompatibility = 1.8 //源代码兼容版本
