@@ -23,9 +23,9 @@ fun CoroutineScope.getUserFormLocal(login: String) = async(Dispatchers.IO){
 }
 
 //2.利用多个Channel
-
+val channels = List(10){Channel<Int>()}
 suspend fun channels(){
-    val channels = List(10){Channel<Int>()}
+
 
     GlobalScope.launch {
         delay(100)
@@ -42,11 +42,26 @@ suspend fun channels(){
     println(result)
 }
 
-//.SelectClause
+//3.SelectClause
 suspend fun mSelectClause(){
     select<Unit> {
         job.onJoin{
             println("join resumed")
+        }
+    }
+}
+
+//3.1 复用两个参数的send SelectClause2
+//如果大家想要确认挂起函数是否支持select，只需要查看其是否存在对应的SelectClauseN类型可
+//
+suspend fun mSelectClause2(){
+    List(100){ element->
+        select <Unit>{
+            channels.forEach { channel ->
+                channel.onSend(element){ sendChannel->
+                    println(" sent on $sendChannel")
+                }
+            }
         }
     }
 }
@@ -69,5 +84,6 @@ suspend fun main() {
     //2
 //    channels()
     //3
-    mSelectClause()
+//    mSelectClause()
+    mSelectClause2()
 }

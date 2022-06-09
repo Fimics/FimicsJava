@@ -2,6 +2,7 @@ package com.mic.core
 
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.selects.select
 
 //1 不能使用Delay()
 val ints = sequence<Int> {
@@ -125,7 +126,6 @@ suspend fun flowConflate() {
 
 
 //9.Flow的变换
-
 suspend fun flowChange() {
 
     //9.1
@@ -176,6 +176,9 @@ suspend fun flowCollectLatest() {
 }
 
 
+
+
+
 suspend fun main() {
     //1.
 //    ints.iterator().forEach { println(it) }
@@ -198,6 +201,13 @@ suspend fun main() {
     //8.1
 //    flowConflate()
     //8.2
-    flowCollectLatest()
+//    flowCollectLatest()
+
+    //9
+//    select<Unit> {
+//        job.onJoin{
+//            println("join resumed")
+//        }
+//    }
 
 }
