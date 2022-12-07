@@ -24,14 +24,12 @@ class MyDelegate {
     operator fun setValue(thisRef: Any?, property: KProperty<*>, value: String) = println("$thisRef, new value is $value")
 }
 
-
 class MyPropertyClass {
     var str: String by MyDelegate()
 }
 
 fun main() {
     val myPropertyClass = MyPropertyClass()
-
     myPropertyClass.str = "hello world"
     println(myPropertyClass.str)
     println(myPropertyClass)

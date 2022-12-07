@@ -19,8 +19,8 @@ package com.mic.p1_base
 fun main(args: Array<String>) {
     var myarray = arrayOf(1,2,4,"hello")
     var m1 :Array<Int> =  Array(1){0};
-    m1[0]=0
-    m1[1]=1
+//    m1[0]=0
+//    m1[1]=1
     for ( i in m1){
         println(m1[i])
     }

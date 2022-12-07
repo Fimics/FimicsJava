@@ -2,11 +2,9 @@ package com.mic.p14_design
 
 //饿汉模式(1)
 object SingleTon {
-
     fun get(): SingleTon {
         return this
     }
-
     fun printx() {
         println(this)
     }
@@ -45,7 +43,6 @@ class Instance2 private constructor() {
     companion object {
         val instance: Instance2 get() = Holder.INSTANCE
     }
-
     fun add() {}
 }
 

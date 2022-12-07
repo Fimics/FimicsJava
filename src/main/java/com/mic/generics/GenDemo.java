@@ -1,4 +1,4 @@
-package com.mic.javagenerics;
+package com.mic.generics;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,14 +5,8 @@ import kotlin.reflect.full.functions
 
 
 class MyTestClass9(value: Int = 0) {
-
-    fun printSomething() {
-        println("Something")
-    }
-
-    fun printNothing() {
-        println("Nothing")
-    }
+    fun printSomething() {}
+    fun printNothing() {}
 }
 
 fun main() {

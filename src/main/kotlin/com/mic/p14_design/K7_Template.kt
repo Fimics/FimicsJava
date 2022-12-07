@@ -44,13 +44,11 @@ private class CivicCenterTask1 {
     private fun evaluate() {
         println("evaluate")
     }
-
 }
 
 fun PullSocialSecurity1(){
     println("PullSocialSecurity1")
 }
-
 
 fun main() {
     val pullSocialSecurity = PullSocialSecurity()

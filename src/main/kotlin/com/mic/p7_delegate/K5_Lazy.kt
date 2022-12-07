@@ -10,7 +10,6 @@ package com.mic.p7_delegate
 
 val myLazyValue: Int by lazy(LazyThreadSafetyMode.PUBLICATION) {
     println("hello world")
-
     30
 }
 

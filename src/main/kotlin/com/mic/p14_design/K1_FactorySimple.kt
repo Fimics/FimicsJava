@@ -40,7 +40,6 @@ enum class ComputerType {
     PC, Server
 }
 
-
 //简单工厂 (1)
 class SimpleFactory {
 
@@ -76,7 +75,6 @@ object ComputerFactory1 {
     }
 }
 
-
 //6.扩展伴生对象方法
 fun Computer.Factory.fromCPU(cpu: String): ComputerType? {
     return when (cpu) {
@@ -88,7 +86,6 @@ fun Computer.Factory.fromCPU(cpu: String): ComputerType? {
 fun main() {
     val comp = SimpleFactory().produce(ComputerType.Server)
     println(comp)
-
     val comp1 = ComputerFactory.produce(ComputerType.Server)
     println(comp1)
 

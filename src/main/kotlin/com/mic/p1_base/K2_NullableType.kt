@@ -39,7 +39,7 @@ fun printMultiply2(a: String, b: String) {
 
     //返回值是Int? 类型并不是null类型所以下边的代码没有进来
     if (null == a2Int) {
-        println("param not int")
+        println("param not int1")
     } else if (null == b2Int) {
         println("param not int")
     } else {

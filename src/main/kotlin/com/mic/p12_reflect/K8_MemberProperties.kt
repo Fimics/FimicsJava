@@ -3,9 +3,7 @@ package com.mic.p12_reflect
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.full.memberProperties
 
-class MyTestClass2(var a: String, val flag: Boolean, var age: Int) {
-
-}
+class MyTestClass2(var a: String, val flag: Boolean, var age: Int) {}
 
 class MyTestClassM {
     var name: String = "hello world"
@@ -15,7 +13,6 @@ class MyTestClass7 {
     var name: String = "hello world"
     var authorName: String = "tom"
 }
-
 
 fun main() {
     val myTestClass2 = MyTestClass2::class
@@ -41,6 +38,5 @@ fun main() {
     if (variableToInvoke is KMutableProperty<*>) {
         variableToInvoke.setter.call(testClass7, "welcome")
     }
-
     println(variableToInvoke?.get(testClass7))
 }

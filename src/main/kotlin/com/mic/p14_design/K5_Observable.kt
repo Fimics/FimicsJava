@@ -5,14 +5,11 @@ import kotlin.properties.Delegates
 /**
  * 观察者模式
  */
-
 //observable
-
 interface StockUpdateListener{
     fun onRise(price:Int);
     fun onFall(price: Int)
 }
-
 
 class StockDisplay: StockUpdateListener {
     override fun onRise(price: Int) {
@@ -41,14 +38,10 @@ class StockUpdate{
     }
 }
 
-
-
 fun main(){
-
     val su = StockUpdate()
     val sd = StockDisplay()
     su.listeners.add(sd)
     su.price=100
     su.price=99
-
 }

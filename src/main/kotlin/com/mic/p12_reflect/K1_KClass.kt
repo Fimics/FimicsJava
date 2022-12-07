@@ -3,14 +3,8 @@ package com.mic.p12_reflect
 import kotlin.reflect.full.memberFunctions
 
 class MyTestClass3 {
-
-    fun printSomething() {
-        println("something")
-    }
-
-    fun printNothing() {
-        println("")
-    }
+    fun printSomething() { println("something") }
+    fun printNothing() { println("") }
 }
 
 open class Parent
@@ -33,7 +27,6 @@ fun main(){
     println(son::class)
     println(son::class.java)
 
-    println("-------")
     println(daughter::class)
     println(daughter::class.java)
 }

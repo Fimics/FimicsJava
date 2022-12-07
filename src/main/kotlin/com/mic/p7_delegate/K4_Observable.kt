@@ -41,31 +41,23 @@ class Person2 {
     }
 }
 
-
 fun main() {
-
-
     val myPerson = MyPerson()
     myPerson.address = "suzhou"
     println(myPerson.address)
 
     println("--------")
-
     val person = Person()
     person.age = 30
     person.age = 40
 
     println("------")
-
     val person2 = Person2()
     println(person2.age)
-
     person2.age = 40
     println(person2.age)
 
     println("========")
-
     person2.age = 30
     println(person2.age)
-
 }

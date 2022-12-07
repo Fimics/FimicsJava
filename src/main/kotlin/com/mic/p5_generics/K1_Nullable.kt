@@ -25,6 +25,4 @@ fun main() {
 
     //4.@Nullable
     //Kotlin在方法参数上标注了@Nullable，在实现上，依旧采用了if..else来对可空情况进行判断。
-
-
 }

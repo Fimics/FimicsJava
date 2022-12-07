@@ -5,11 +5,9 @@ import kotlin.reflect.full.createInstance
 
 class MyTestClass10(var name: String) {
     var price = 0.0
-
     constructor(): this("未知商品") {
         this.price = 0.0
     }
-
     constructor(name: String, price: Double) : this(name) {
         this.price = price
     }

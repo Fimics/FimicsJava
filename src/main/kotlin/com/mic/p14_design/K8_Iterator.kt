@@ -3,8 +3,6 @@ package com.mic.p14_design
 /**
  * iterator 迭代器模式
  */
-
-
 data class Book(val name: String)
 
 //1.实现iterator接口

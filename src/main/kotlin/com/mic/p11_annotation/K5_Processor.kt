@@ -6,12 +6,7 @@ import javax.lang.model.element.ElementKind
 import javax.lang.model.element.TypeElement
 import kotlin.reflect.full.memberProperties
 
-/**
- * 注解处理器
- */
-
 annotation class MapperAnnotation
-
 /**
  * 注解处理器的使用方法也和Java一样：1）添加注解处理器信息。这需要在classpath里包含METAINFO/services/javax.annotation.processing.Processor文件，
  * 并将注解处理器包名和类名写入该文件。2）使用kapt插件。如果是gradle工程可以通过applyplugin：'kotlinkapt'添加注解处理器支持。kapt也支持生成Kotlin代码。

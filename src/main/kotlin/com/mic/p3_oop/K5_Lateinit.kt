@@ -17,7 +17,6 @@ class LPerson(address:String,name: String){
     val age:Int
          get() = 20;
 
-
     var address:String = address
         get() {
             println("get address")
@@ -27,7 +26,6 @@ class LPerson(address:String,name: String){
             println("set address")
             field = value
         }
-
     var name:String=name
 }
 

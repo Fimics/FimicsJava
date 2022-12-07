@@ -1,11 +1,9 @@
-package com.mic.javagenerics;
+package com.mic.generics;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class GenMapTest4 {
 
@@ -16,20 +14,30 @@ public class GenMapTest4 {
 
 
     public static void main(String[] args) {
+        long a=System.currentTimeMillis();
         GenMapTest4 genMapTest4 = new GenMapTest4();
         Map map = new HashMap();
         map.put("time", System.currentTimeMillis());
-//        map.put(1,System.currentTimeMillis());
+        map.put(1,(double)System.currentTimeMillis());
+        map.put(2,"video");
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        long b =System.currentTimeMillis();
+        double dx=(double)(b-a);
+        map.put(3,dx);
         genMapTest4.report(map);
     }
 
-    private <K, V> void report(Map map) {
+    private <K, V> void report(Map<K,V> map) {
         if (map == null || map.size() == 0) return;
 
         Set<Map.Entry<K, V>> set = map.entrySet();
         set.forEach(it -> {
-            double value = valueConvertToDouble(it.getValue());
-            System.out.println("key ->" + it.getKey() + "   value->" + value + " valueType->" + value);
+//            double value = valueConvertToDouble(it.getValue());
+//            System.out.println("key ->" + it.getKey() + "   value->" + value + " valueType->" + value);
             System.out.println("key ->" + it.getKey() + "   value->" + it.getValue());
         });
     }

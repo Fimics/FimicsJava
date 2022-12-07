@@ -4,7 +4,6 @@ import kotlin.reflect.full.companionObject
 
 
 class MyTestClass8 {
-
     companion object {
         fun method() {
             println("hello world")
@@ -17,6 +16,5 @@ fun main() {
     var companionObj = myTestClass8.companionObject
 
     println(companionObj)
-
     MyTestClass8.method()
 }

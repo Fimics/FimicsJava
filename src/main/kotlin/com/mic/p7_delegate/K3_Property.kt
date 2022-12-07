@@ -4,7 +4,6 @@ import kotlin.properties.ReadOnlyProperty
 import kotlin.reflect.KProperty
 
 /*
-
     关于属性委托的要求：
 
     对于只读属性来说（val修饰的属性），委托需要提供一个名为getValue的方法，该方法接收如下参数：
@@ -62,7 +61,6 @@ class People {
 
 fun main() {
     val people = People()
-
     println(people.name)
     println(people.address)
 }
