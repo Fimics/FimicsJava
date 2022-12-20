@@ -6,11 +6,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 /**
- * 1. 协程是一个无优先级的子程序调度组件，允许子程序在特定的地方挂起恢复，线程包含于进程，进程包含于线程，只在内存足够，一个线程中可以有任意多个协程，
- *    但某一时刻只能有一个协程在运行，多个协程分享该线程分配到的计算机资源，
- *
- * 2.协程的挂起不需要阻塞线程，几乎是无代价的，协程由开发者控制，所以协程也像用户态的线程，非常轻量级。
- *
+
  * 3.CoroutineScope
  *       1.可以理解为协程本身，包含了CoroutineContext
  *       2.除去不同的协程构建器所提供的协程作用域（coroutine scope）外，我们还可以通过coroutineScope builder来声明自己的协程作用域。

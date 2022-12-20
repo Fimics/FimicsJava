@@ -8,10 +8,7 @@ fun main(){
         Thread.sleep(1000)
         println("Kotlin Coroutines")
     }
-
     println("Hello")
-
     Thread.sleep(200)
-
     println("World")
 }
