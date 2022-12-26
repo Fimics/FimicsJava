@@ -17,8 +17,9 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-reflect"
     testImplementation "org.jetbrains.kotlin:kotlin-test"
     testImplementation "org.jetbrains.kotlin:kotlin-test-junit"
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
-
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'com.google.code.gson:gson:2.10'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 }
 
 sourceCompatibility = 1.8 //源代码兼容版本
