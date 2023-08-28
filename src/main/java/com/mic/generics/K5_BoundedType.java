@@ -11,7 +11,7 @@ public class K5_BoundedType {
 
     public static void main(String[] args) {
         Box<Integer> integerBox = new Box<Integer>();
-        integerBox.set(new Integer(10));
+//        integerBox.set(new Integer(10));
         integerBox.inspect(10);
 //        integerBox.inspect("hello");
         List<Double> ld = Arrays.asList(1.2,2.3);
